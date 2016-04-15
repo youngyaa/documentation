@@ -1,0 +1,2121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Bluminethemes.com">
+
+    <title>Customization | Nantria Documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for documentation page -->
+    <link href="documentation.css" rel="stylesheet">
+	<link rel="stylesheet" href="syntax-highlighter/shCore.css" /> <!-- Syntax Highlighter -->
+	<link rel="stylesheet" href="syntax-highlighter/shThemeDefault.css" /> <!-- Syntax Highlighter default theme -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	
+	<!-- ==============================================
+	JS
+	=============================================== -->
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
+	<script type="text/javascript" src="js/jquery.easing.js"></script> <!-- jquery.easing -->
+	<script type="text/javascript" src="syntax-highlighter/shCore.js"></script> <!-- Syntax Highlighter -->
+	<script type="text/javascript" src="syntax-highlighter/shBrushJScript.js"></script> <!-- Syntax Highlighter Brush -->
+	<script type="text/javascript" src="syntax-highlighter/shBrushXml.js"></script> <!-- Syntax Highlighter Xml Brush -->
+	<script type="text/javascript" src="syntax-highlighter/shBrushPhp.js"></script> <!-- Syntax Highlighter Php Brush -->
+	<script type="text/javascript" src="js/smoothscroll.js"></script> <!-- Smoothscroll -->
+	<script type="text/javascript" src="js/documentation.js"></script> <!-- Smoothscroll -->
+	
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	
+	<div id="top"></div>
+	
+    <nav class="site-nav navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Nantria Documentation</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse navbar-right">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="customizations.html">Customization</a></li>
+					<li class="active"><a href="shortcodes.html">Shortcodes</a></li>
+					<li><a href="credits.html">Credits</a></li>
+					<li><a href="changelog.html">Changelog</a></li>
+					<li><a href="support.html">Support</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+    </nav>
+
+	<header class="bt-docs-header">
+		<div class="container-fluid">
+			<h1>Documentation</h1>
+			<p class="lead">Using Nantria - Multi-purpose Site Template.</p>
+		</div>
+	</header>
+	
+    <div class="container-fluid bt-docs-container">
+		<div class="row">
+		
+			<div class="col-md-3 sidebar-overlay hidden-xs hidden-sm"></div>
+			<div class="col-md-3 col-sidebar" role="complementary">
+				<div class="sidebar-heading">
+					<h3 class="sidebar-title">The Shortcodes</h3>
+				</div>
+				<nav class="bt-docs-sidebar">
+					<ul class="nav nav-stacked bt-docs-sidenav">				
+						<li><a class="scrollto" href="#docs-shortcodes-animations">Animations</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-buttons">Buttons</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-tabs">Tabbed Content</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-accordions">Accordions</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-alerts">Alerts</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-tooltips">Tooltips & Popovers</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-progressbar">Progress Bars</a></li>	
+						<li><a class="scrollto" href="#docs-shortcodes-iconboxes">Icon Boxes</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-countdowns">Countdowns</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-countto">Count To</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-tables">Tables</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-typography">Typography</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-blockquotes">Blockquotes</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-grid">Grid Structure</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-dividers">Dividers</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-pagination">Pagination</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-clients">Clients</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-social-icons">Social Icons</a></li>
+						<li><a class="scrollto" href="#docs-shortcodes-listing">Listing</a></li>					
+					</ul>
+				</nav>
+			</div>
+
+			<div class="col-md-9 col-content" role="main">
+			
+				<div class="bs-docs-section">
+
+					<div class="bs-docs-box first" id="docs-shortcodes-animations">
+						<h2 class="page-header">Animations</h2>
+						<p>You can animate each single element of the template, simply adding the <code>animated</code> class and the <code>data-animation</code> attribute, as you can see on example:</p>
+						<p>Example:</p>
+						<pre class="brush: html">
+							&lt;img src="http://placehold.it/940x440" alt="" class="img-responsive animated" data-animation="fadeInUp"&gt;</pre>
+						<p>The animation is triggered when the element is visible in the viewport. Take a look <a class="scrollto" href="https://daneden.github.io/animate.css/" target="_blank">here</a> for a complete list of the animations available.</p>
+						<p>You can animate each single element of the template when the page is loaded, simply adding the <code>onstart</code> class.Example</p>
+						<pre class="brush: html">
+							&lt;img src="http://placehold.it/940x440" alt="" class="img-responsive onstart animated" data-animation="fadeInUp"&gt;</pre>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-buttons">
+						<h2 class="page-header">Buttons</h2>
+						
+						<h3 class="page-header">Standard</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-buttons-standard.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;!-- Red ---&gt;
+							&lt;a href="#" class="button button-mini button-red"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-red"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-red"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-red"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-red icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		
+							
+							&lt;!-- Pink ---&gt;
+							&lt;a href="#" class="button button-mini button-pink"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-pink"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-pink"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-pink"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-pink icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		
+							
+							&lt;!-- Purple ---&gt;
+							&lt;a href="#" class="button button-mini button-purple"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-purple"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-purple"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-purple"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-purple icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		
+							
+							&lt;!-- Indigo ---&gt;
+							&lt;a href="#" class="button button-mini button-indigo"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-indigo"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-indigo"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-indigo"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-indigo icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		
+							
+							&lt;!-- Blue ---&gt;
+							&lt;a href="#" class="button button-mini button-blue"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-blue"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-blue"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-blue"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge icon-right button-blue"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;	
+							
+							&lt;!-- Cyan ---&gt;
+							&lt;a href="#" class="button button-mini button-cyan"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-cyan"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-cyan"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-cyan"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-cyan icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		
+							
+							&lt;!-- Teal ---&gt;
+							&lt;a href="#" class="button button-mini button-teal"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-teal"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-teal"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-teal"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-teal icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		
+							
+							&lt;!-- Green ---&gt;
+							&lt;a href="#" class="button button-mini button-green"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-green"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-green"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-green"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-green icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		
+							
+							&lt;!-- Lime ---&gt;
+							&lt;a href="#" class="button button-mini button-lime"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-lime"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-lime"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-lime"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-lime icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		
+							
+							&lt;!-- Yellow ---&gt;
+							&lt;a href="#" class="button button-mini button-yellow"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-yellow"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-yellow"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-yellow"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-yellow icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		
+							
+							&lt;!-- Amber ---&gt;
+							&lt;a href="#" class="button button-mini button-amber"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-amber"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-amber"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-amber"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-amber icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		
+
+							&lt;!-- Orange ---&gt;
+							&lt;a href="#" class="button button-mini button-orange"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-orange"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-orange"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-orange"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-orange icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		
+
+							&lt;!-- Brown ---&gt;
+							&lt;a href="#" class="button button-mini button-brown"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-brown"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-brown"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-brown"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-brown icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		
+							
+							&lt;!-- Grey ---&gt;
+							&lt;a href="#" class="button button-mini button-grey"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-grey"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-grey"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-grey"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-grey icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		
+							
+							&lt;!-- Blck ---&gt;
+							&lt;a href="#" class="button button-mini button-black"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-black"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-black"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-black"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-black icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		
+							
+							&lt;!-- White ---&gt;
+							&lt;a href="#" class="button button-mini button-white"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-white"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-white"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-white"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-white icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		</pre>
+						
+						<h3 class="page-header">No radius</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-buttons-noradius.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;a href="#" class="button button-mini button-red button-noradius"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-red button-noradius"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-red button-noradius"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-red button-noradius"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-red icon-right button-noradius"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;		</pre>
+						
+						<h3 class="page-header">Rounded</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-buttons-rounded.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;a href="#" class="button button-mini button-cyan button-rounded"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-cyan button-rounded"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-cyan button-rounded"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-cyan button-rounded"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-cyan button-rounded icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;</pre>
+						
+						<h3 class="page-header">Border</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-buttons-border.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;a href="#" class="button button-mini button-cyan button-border"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-cyan button-border"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-cyan button-border"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-cyan button-border"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-cyan button-border icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;</pre>
+						
+						<h3 class="page-header">Thin Border & No Radius Buttons</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-buttons-borderthin-noradius.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;a href="#" class="button button-mini button-cyan button-border border-thin button-noradius"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-cyan button-border border-thin button-noradius"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-cyan button-border border-thin button-noradius"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-cyan button-border border-thin button-noradius"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-cyan button-border icon-right border-thin button-noradius"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;</pre>
+						
+						<h3 class="page-header">Border & Rounded Buttons</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-buttons-border-rounded.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;a href="#" class="button button-mini button-cyan button-border button-rounded"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-cyan button-border button-rounded"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-cyan button-border button-rounded"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-cyan button-border button-rounded"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-cyan button-border button-rounded icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;	</pre>
+						
+						<h3 class="page-header">Links</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-buttons-link.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;a href="#" class="button button-mini button-cyan button-link"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-cyan button-link"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-cyan button-link"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-cyan button-link"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-cyan button-link icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;</pre>
+						
+						<h3 class="page-header">Links Uppercase</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-buttons-link-uppercase.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;a href="#" class="button button-mini button-cyan button-link-uppercase"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-small button-cyan button-link-uppercase"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-cyan button-link-uppercase"&gt;&lt;i class="fa fa-gift"&gt;&lt;/i&gt; Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-large button-cyan button-link-uppercase"&gt;Default Button&lt;/a&gt;
+							&lt;a href="#" class="button button-xlarge button-cyan button-link-uppercase icon-right"&gt;Default Button &lt;i class="fa fa-arrow-circle-right"&gt;&lt;/i&gt;&lt;/a&gt;</pre>
+						
+						<h3 class="page-header">Shadow</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-buttons-shadow.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-red"&gt;Default Button&lt;/a&gt;
+						
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-pink"&gt;Default Button&lt;/a&gt;
+						
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-purple"&gt;Default Button&lt;/a&gt;
+						
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-indigo"&gt;Default Button&lt;/a&gt;
+						
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-blue"&gt;Default Button&lt;/a&gt;
+					
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-cyan"&gt;Default Button&lt;/a&gt;
+						
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-teal"&gt;Default Button&lt;/a&gt;
+						
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-green"&gt;Default Button&lt;/a&gt;
+						
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-lime"&gt;Default Button&lt;/a&gt;
+					
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-yellow"&gt;Default Button&lt;/a&gt;
+						
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-amber"&gt;Default Button&lt;/a&gt;
+						
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-orange"&gt;Default Button&lt;/a&gt;
+						
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-brown"&gt;Default Button&lt;/a&gt;
+						
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-grey"&gt;Default Button&lt;/a&gt;
+						
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-black"&gt;Default Button&lt;/a&gt;
+						
+							&lt;a href="#" class="button button-shadow button-rounded button-large button-white"&gt;Default Button&lt;/a&gt;</pre>
+						
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-tabs">
+						<h2 class="page-header">Tabbed Content</h2>
+						
+						<h3 class="page-header">Classic Tabs</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-tabs-classic.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;!-- Nav tabs --&gt;
+							&lt;ul class="nav nav-tabs"&gt;
+								&lt;li class="active"&gt;&lt;a href="#first-tab" data-toggle="tab"&gt;First Tab&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#second-tab" data-toggle="tab"&gt;Second Tab&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#third-tab" data-toggle="tab"&gt;Third Tab&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#fourth-tab" data-toggle="tab"&gt;Fourth Tab&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;
+							&lt;!-- Tab panes --&gt;
+							&lt;div class="tab-content"&gt;
+								&lt;div class="tab-pane active" id="first-tab"&gt;
+									&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non tincidunt elit. Nulla non tincidunt turpis, quis accumsan felis. Vivamus vel maximus elit, vitae accumsan lorem. Quisque eget tincidunt lorem, eget laoreet purus. Nam gravida hendrerit nisi. Nulla nec blandit est. Pellentesque id ligula id turpis iaculis euismod.&lt;/p&gt;
+								&lt;/div&gt;
+								&lt;div class="tab-pane" id="second-tab"&gt;
+									&lt;p&gt;Integer elementum ultricies orci. Maecenas arcu est, hendrerit id consequat ut, pulvinar eu quam. Integer pharetra bibendum vulputate. Nam tellus risus, posuere vel quam sit amet, ullamcorper pulvinar mi. Aenean ut magna nisl. Sed efficitur molestie turpis, sit amet commodo mi ultricies id. Nunc vitae sem et nunc vestibulum accumsan quis eget est.&lt;/p&gt;
+								&lt;/div&gt;
+								&lt;div class="tab-pane" id="third-tab"&gt;
+									&lt;p&gt;Morbi vel luctus arcu, in varius nulla. Phasellus congue tortor eget massa pellentesque, sit amet sodales felis iaculis. Proin vel magna hendrerit erat consectetur euismod. Nunc id sem in lorem iaculis blandit sit amet ac augue. Suspendisse ultricies efficitur velit nec lacinia. Integer scelerisque ante sem, posuere luctus purus cursus ac. Ut sit amet ultricies lacus, sit amet dictum est.&lt;/p&gt;
+								&lt;/div&gt;
+								&lt;div class="tab-pane" id="fourth-tab"&gt;
+									&lt;p&gt;Phasellus interdum eros id turpis mollis facilisis quis ut metus. In hac habitasse platea dictumst. Integer nec odio nisl. Vivamus eu erat placerat, maximus nisi et, cursus metus. Donec quis tristique dolor, at ullamcorper elit. In sed nisl hendrerit, iaculis neque eget, varius lectus. Integer massa augue, scelerisque ac suscipit eget, placerat in ante. Mauris auctor ullamcorper ex vel posuere.&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;</pre>
+						
+						<h3 class="page-header">Alternative Tabs</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-tabs-alt.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;!-- Nav tabs - Alternetive --&gt;
+							&lt;ul class="nav nav-tabs alt"&gt;
+								&lt;li class="active"&gt;&lt;a href="#first-tab-alt" data-toggle="tab"&gt;First Tab&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#second-tab-alt" data-toggle="tab"&gt;Second Tab&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#third-tab-alt" data-toggle="tab"&gt;Third Tab&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;
+							&lt;!-- Tab panes - Alternetive --&gt;
+							&lt;div class="tab-content alt"&gt;
+								&lt;div class="tab-pane text-center active" id="first-tab-alt"&gt;
+									&lt;p&gt;Integer elementum ultricies orci. Maecenas arcu est, hendrerit id consequat ut, pulvinar eu quam. Integer pharetra bibendum vulputate. Nam tellus risus, posuere vel quam sit amet, ullamcorper pulvinar mi. Aenean ut magna nisl. Sed efficitur molestie turpis, sit amet commodo mi ultricies id. Nunc vitae sem et nunc vestibulum accumsan quis eget est.&lt;/p&gt;
+								&lt;/div&gt;
+								&lt;div class="tab-pane text-center" id="second-tab-alt"&gt;
+									&lt;p&gt;Phasellus interdum eros id turpis mollis facilisis quis ut metus. In hac habitasse platea dictumst. Integer nec odio nisl. Vivamus eu erat placerat, maximus nisi et, cursus metus. Donec quis tristique dolor, at ullamcorper elit. In sed nisl hendrerit, iaculis neque eget, varius lectus. Integer massa augue, scelerisque ac suscipit eget, placerat in ante. Mauris auctor ullamcorper ex vel posuere.&lt;/p&gt;
+								&lt;/div&gt;
+								&lt;div class="tab-pane text-center" id="third-tab-alt"&gt;
+									&lt;p&gt;Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;</pre>
+						
+						<h3 class="page-header">Icon Tabs</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-tabs-icon.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;!-- Nav tabs - Icon --&gt;
+							&lt;ul class="nav nav-tabs ico"&gt;
+								&lt;li class="active"&gt;
+									&lt;a href="#first-tab-ico" data-toggle="tab"&gt;
+										&lt;i class="ion-ios-world-outline"&gt;&lt;/i&gt;&lt;span&gt;Branding&lt;/span&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a href="#second-tab-ico" data-toggle="tab"&gt;
+									&lt;i class="ion-ios-analytics-outline"&gt;&lt;/i&gt;&lt;span&gt;Roadmap Strategy&lt;/span&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a href="#third-tab-ico" data-toggle="tab"&gt;
+									&lt;i class="ion-ios-compose-outline"&gt;&lt;/i&gt;&lt;span&gt;Copywriting&lt;/span&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a href="#fourth-tab-ico" data-toggle="tab"&gt;
+									&lt;i class="ion-ios-film-outline"&gt;&lt;/i&gt;&lt;span&gt;TV Commercials&lt;/span&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+							&lt;!-- Tab panes - Icon --&gt;
+							&lt;div class="tab-content ico"&gt;
+								&lt;div class="tab-pane text-center active" id="first-tab-ico"&gt;
+									&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non tincidunt elit. Nulla non tincidunt turpis, quis accumsan felis. Vivamus vel maximus elit, vitae accumsan lorem. Quisque eget tincidunt lorem, eget laoreet purus. Nam gravida hendrerit nisi. Nulla nec blandit est. Pellentesque id ligula id turpis iaculis euismod.&lt;/p&gt;
+								&lt;/div&gt;
+								&lt;div class="tab-pane text-center" id="second-tab-ico"&gt;
+									&lt;p&gt;Integer elementum ultricies orci. Maecenas arcu est, hendrerit id consequat ut, pulvinar eu quam. Integer pharetra bibendum vulputate. Nam tellus risus, posuere vel quam sit amet, ullamcorper pulvinar mi. Aenean ut magna nisl. Sed efficitur molestie turpis, sit amet commodo mi ultricies id. Nunc vitae sem et nunc vestibulum accumsan quis eget est.&lt;/p&gt;
+								&lt;/div&gt;
+								&lt;div class="tab-pane text-center" id="third-tab-ico"&gt;
+									&lt;p&gt;Morbi vel luctus arcu, in varius nulla. Phasellus congue tortor eget massa pellentesque, sit amet sodales felis iaculis. Proin vel magna hendrerit erat consectetur euismod. Nunc id sem in lorem iaculis blandit sit amet ac augue. Suspendisse ultricies efficitur velit nec lacinia. Integer scelerisque ante sem, posuere luctus purus cursus ac. Ut sit amet ultricies lacus, sit amet dictum est.&lt;/p&gt;
+								&lt;/div&gt;
+								&lt;div class="tab-pane text-center" id="fourth-tab-ico"&gt;
+									&lt;p&gt;Phasellus interdum eros id turpis mollis facilisis quis ut metus. In hac habitasse platea dictumst. Integer nec odio nisl. Vivamus eu erat placerat, maximus nisi et, cursus metus. Donec quis tristique dolor, at ullamcorper elit. In sed nisl hendrerit, iaculis neque eget, varius lectus. Integer massa augue, scelerisque ac suscipit eget, placerat in ante. Mauris auctor ullamcorper ex vel posuere.&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;</pre>
+						
+						<h3 class="page-header">Text Tabs</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-tabs-text.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;!-- Nav tabs - Icon --&gt;
+							&lt;ul class="nav nav-tabs text"&gt;
+								&lt;li class="active"&gt;
+									&lt;a href="#first-tab-text" data-toggle="tab"&gt;
+										&lt;span&gt;Web  Design&lt;/span&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a href="#second-tab-text" data-toggle="tab"&gt;
+										&lt;span&gt;UI / UX&lt;/span&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a href="#third-tab-text" data-toggle="tab"&gt;
+										&lt;span&gt;3D Animations&lt;/span&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a href="#fourth-tab-text" data-toggle="tab"&gt;
+										&lt;span&gt;Support&lt;/span&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+							&lt;!-- Tab panes - Icon --&gt;
+							&lt;div class="tab-content text"&gt;
+								&lt;div class="tab-pane text-center active" id="first-tab-text"&gt;
+									&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non tincidunt elit. Nulla non tincidunt turpis, quis accumsan felis. Vivamus vel maximus elit, vitae accumsan lorem. Quisque eget tincidunt lorem, eget laoreet purus. Nam gravida hendrerit nisi. Nulla nec blandit est. Pellentesque id ligula id turpis iaculis euismod.&lt;/p&gt;
+								&lt;/div&gt;
+								&lt;div class="tab-pane text-center" id="second-tab-text"&gt;
+									&lt;p&gt;Integer elementum ultricies orci. Maecenas arcu est, hendrerit id consequat ut, pulvinar eu quam. Integer pharetra bibendum vulputate. Nam tellus risus, posuere vel quam sit amet, ullamcorper pulvinar mi. Aenean ut magna nisl. Sed efficitur molestie turpis, sit amet commodo mi ultricies id. Nunc vitae sem et nunc vestibulum accumsan quis eget est.&lt;/p&gt;
+								&lt;/div&gt;
+								&lt;div class="tab-pane text-center" id="third-tab-text"&gt;
+									&lt;p&gt;Morbi vel luctus arcu, in varius nulla. Phasellus congue tortor eget massa pellentesque, sit amet sodales felis iaculis. Proin vel magna hendrerit erat consectetur euismod. Nunc id sem in lorem iaculis blandit sit amet ac augue. Suspendisse ultricies efficitur velit nec lacinia. Integer scelerisque ante sem, posuere luctus purus cursus ac. Ut sit amet ultricies lacus, sit amet dictum est.&lt;/p&gt;
+								&lt;/div&gt;
+								&lt;div class="tab-pane text-center" id="fourth-tab-text"&gt;
+									&lt;p&gt;Phasellus interdum eros id turpis mollis facilisis quis ut metus. In hac habitasse platea dictumst. Integer nec odio nisl. Vivamus eu erat placerat, maximus nisi et, cursus metus. Donec quis tristique dolor, at ullamcorper elit. In sed nisl hendrerit, iaculis neque eget, varius lectus. Integer massa augue, scelerisque ac suscipit eget, placerat in ante. Mauris auctor ullamcorper ex vel posuere.&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;;</pre>
+						
+						<h3 class="page-header">Text Tabs Small</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-tabs-textsmall.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;!-- Nav tabs - Icon --&gt;
+							&lt;ul class="nav nav-tabs text small"&gt;
+								&lt;li class="active"&gt;
+									&lt;a href="#first-tab-text-p" data-toggle="tab"&gt;
+										&lt;span&gt;Web  Design&lt;/span&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a href="#second-tab-text-p" data-toggle="tab"&gt;
+										&lt;span&gt;UI / UX&lt;/span&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a href="#third-tab-text-p" data-toggle="tab"&gt;
+										&lt;span&gt;3D Animations&lt;/span&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a href="#fourth-tab-text-p" data-toggle="tab"&gt;
+										&lt;span&gt;Support&lt;/span&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+							&lt;!-- Tab panes - Icon --&gt;
+							&lt;div class="tab-content text"&gt;
+								&lt;div class="tab-pane active" id="first-tab-text-small"&gt;
+									&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non tincidunt elit. Nulla non tincidunt turpis, quis accumsan felis. Vivamus vel maximus elit, vitae accumsan lorem. Quisque eget tincidunt lorem, eget laoreet purus. Nam gravida hendrerit nisi. Nulla nec blandit est. Pellentesque id ligula id turpis iaculis euismod.&lt;/p&gt;
+								&lt;/div&gt;
+								&lt;div class="tab-pane" id="second-tab-text-small"&gt;
+									&lt;p&gt;Integer elementum ultricies orci. Maecenas arcu est, hendrerit id consequat ut, pulvinar eu quam. Integer pharetra bibendum vulputate. Nam tellus risus, posuere vel quam sit amet, ullamcorper pulvinar mi. Aenean ut magna nisl. Sed efficitur molestie turpis, sit amet commodo mi ultricies id. Nunc vitae sem et nunc vestibulum accumsan quis eget est.&lt;/p&gt;
+								&lt;/div&gt;
+								&lt;div class="tab-pane" id="third-tab-text-small"&gt;
+									&lt;p&gt;Morbi vel luctus arcu, in varius nulla. Phasellus congue tortor eget massa pellentesque, sit amet sodales felis iaculis. Proin vel magna hendrerit erat consectetur euismod. Nunc id sem in lorem iaculis blandit sit amet ac augue. Suspendisse ultricies efficitur velit nec lacinia. Integer scelerisque ante sem, posuere luctus purus cursus ac. Ut sit amet ultricies lacus, sit amet dictum est.&lt;/p&gt;
+								&lt;/div&gt;
+								&lt;div class="tab-pane" id="fourth-tab-text-small"&gt;
+									&lt;p&gt;Phasellus interdum eros id turpis mollis facilisis quis ut metus. In hac habitasse platea dictumst. Integer nec odio nisl. Vivamus eu erat placerat, maximus nisi et, cursus metus. Donec quis tristique dolor, at ullamcorper elit. In sed nisl hendrerit, iaculis neque eget, varius lectus. Integer massa augue, scelerisque ac suscipit eget, placerat in ante. Mauris auctor ullamcorper ex vel posuere.&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;</pre>
+						
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-accordions">
+						<h2 class="page-header">Accordions</h2>
+						
+						<h3 class="page-header">Default</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-accordions-default.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;div class="panel-group" id="accordion"&gt;
+								&lt;div class="panel panel-default"&gt;
+									&lt;div class="panel-heading"&gt;
+										&lt;a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed"&gt;Toggle panel Item #1&lt;/a&gt;
+									&lt;/div&gt;
+									&lt;div id="collapseOne" class="panel-collapse collapse"&gt;
+										&lt;div class="panel-body"&gt;
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore.
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class="panel panel-default"&gt;
+									&lt;div class="panel-heading"&gt;
+										&lt;a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class=""&gt;Toggle panel Item #2&lt;/a&gt;
+									&lt;/div&gt;
+									&lt;div id="collapseTwo" class="panel-collapse collapse in"&gt;
+										&lt;div class="panel-body"&gt;
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit tortor, dictum in gravida nec, aliquet non lorem. Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viv erra a, dapibus at dolor. In iaculis vive rra neque, ac eleifend ante lobo rtis id. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum.
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class="panel panel-default"&gt;
+									&lt;div class="panel-heading"&gt;
+										&lt;a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed"&gt;Toggle panel Item #3&lt;/a&gt;
+									&lt;/div&gt;
+									&lt;div id="collapseThree" class="panel-collapse collapse"&gt;
+										&lt;div class="panel-body"&gt;
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore.
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class="panel panel-default"&gt;
+									&lt;div class="panel-heading"&gt;
+										&lt;a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed"&gt;Toggle panel Item #4&lt;/a&gt;
+									&lt;/div&gt;
+									&lt;div id="collapseFour" class="panel-collapse collapse"&gt;
+										&lt;div class="panel-body"&gt;
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore.
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;</pre>
+						
+						<h3 class="page-header">Alterative</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-accordions-alt.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;div class="panel-group alt" id="accordion-alt"&gt;
+								&lt;div class="panel panel-default"&gt;
+									&lt;div class="panel-heading"&gt;
+										&lt;a data-toggle="collapse" data-parent="#accordion-alt" href="#collapseOne-alt" class="collapsed"&gt;Toggle panel Item #1&lt;/a&gt;
+									&lt;/div&gt;
+									&lt;div id="collapseOne-alt" class="panel-collapse collapse"&gt;
+										&lt;div class="panel-body"&gt;
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore.
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class="panel panel-default"&gt;
+									&lt;div class="panel-heading"&gt;
+										&lt;a data-toggle="collapse" data-parent="#accordion-alt" href="#collapseTwo-alt" class=""&gt;Toggle panel Item #2&lt;/a&gt;
+									&lt;/div&gt;
+									&lt;div id="collapseTwo-alt" class="panel-collapse collapse in"&gt;
+										&lt;div class="panel-body"&gt;
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit tortor, dictum in gravida nec, aliquet non lorem. Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viv erra a, dapibus at dolor. In iaculis vive rra neque, ac eleifend ante lobo rtis id. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum.
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class="panel panel-default"&gt;
+									&lt;div class="panel-heading"&gt;
+										&lt;a data-toggle="collapse" data-parent="#accordion-alt" href="#collapseThree-alt" class="collapsed"&gt;Toggle panel Item #3&lt;/a&gt;
+									&lt;/div&gt;
+									&lt;div id="collapseThree-alt" class="panel-collapse collapse"&gt;
+										&lt;div class="panel-body"&gt;
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore.
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class="panel panel-default"&gt;
+									&lt;div class="panel-heading"&gt;
+										&lt;a data-toggle="collapse" data-parent="#accordion-alt" href="#collapseFour-alt" class="collapsed"&gt;Toggle panel Item #4&lt;/a&gt;
+									&lt;/div&gt;
+									&lt;div id="collapseFour-alt" class="panel-collapse collapse"&gt;
+										&lt;div class="panel-body"&gt;
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore.
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;</pre>
+						
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-alerts">
+						<h2 class="page-header">Alerts</h2>
+						<p>
+							<img src="img/shortcodes/shortcodes-alerts.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+						&lt;div class="well"&gt;
+							&lt;h6&gt;Callout Box&lt;/h6&gt;
+							&lt;p class="small-txt"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea&lt;/p&gt;
+							&lt;i class="icon icon-alerts-02"&gt;&lt;/i&gt;
+						&lt;/div&gt;
+						
+						&lt;div class="alert alert-success"&gt;
+							&lt;button type="button" class="close" data-dismiss="alert" aria-hidden="true"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/button&gt;
+							&lt;strong&gt;Success Alert.&lt;/strong&gt; It is a long established fact that a reader will be distracted.
+							&lt;i class="icon icon-badges-votes-10"&gt;&lt;/i&gt;
+						&lt;/div&gt;
+						
+						&lt;div class="alert alert-info"&gt;
+							&lt;button type="button" class="close" data-dismiss="alert" aria-hidden="true"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/button&gt;
+							&lt;strong&gt;Info Alert.&lt;/strong&gt; It is a long established fact that a reader will be distracted.
+							&lt;i class="icon icon-alerts-18"&gt;&lt;/i&gt;
+						&lt;/div&gt;
+						
+						&lt;div class="alert alert-warning"&gt;
+							&lt;button type="button" class="close" data-dismiss="alert" aria-hidden="true"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/button&gt;
+							&lt;strong&gt;Warning Alert.&lt;/strong&gt; It is a long established fact that a reader will be distracted.
+							&lt;i class="icon icon-alerts-01"&gt;&lt;/i&gt;
+						&lt;/div&gt;
+						
+						&lt;div class="alert alert-danger"&gt;
+							&lt;button type="button" class="close" data-dismiss="alert" aria-hidden="true"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/button&gt;
+							&lt;strong&gt;Danger Alert.&lt;/strong&gt; It is a long established fact that a reader will be distracted.
+							&lt;i class="icon icon-badges-votes-11"&gt;&lt;/i&gt;
+						&lt;/div&gt;</pre>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-tooltips">
+						<h2 class="page-header">Tooltips & Popovers</h2>
+						<p>Read more about <a class="scrollto" href="http://getbootstrap.com/javascript/#tooltips" target="_blank">Bootstrap Tooltips</a> and <a class="scrollto" href="http://getbootstrap.com/javascript/#popovers" target="_blank">Bootstrap Popovers</a>.				
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-progressbar">
+						<h2 class="page-header">Progress Bars</h2>
+						
+						<h3 class="page-header">Exterior Title</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-progressbar-e.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;div class="progress progress-2 text-center"&gt;
+								&lt;div class="title"&gt;&lt;span class="pull-left"&gt;Photoshop&lt;/span&gt;&lt;span class="pull-right"&gt;80%&lt;/span&gt;&lt;/div&gt;
+								&lt;div class="bar"&gt;
+									&lt;div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"&gt;&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class="progress progress-2 text-center"&gt;
+								&lt;div class="title"&gt;&lt;span class="pull-left"&gt;jQuery&lt;/span&gt;&lt;span class="pull-right"&gt;70%&lt;/span&gt;&lt;/div&gt;
+								&lt;div class="bar"&gt;
+									&lt;div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"&gt;&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class="progress progress-2 text-center"&gt;
+								&lt;div class="title"&gt;&lt;span class="pull-left"&gt;PHP&lt;/span&gt;&lt;span class="pull-right"&gt;50%&lt;/span&gt;&lt;/div&gt;
+								&lt;div class="bar"&gt;
+									&lt;div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"&gt;&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;</pre>
+							
+						<h3 class="page-header">Contained Title</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-progressbar-c.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;div class="progress progress-1"&gt;
+								&lt;div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"&gt;
+									&lt;span class="title"&gt;Photoshop&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class="progress progress-1"&gt;
+								&lt;div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"&gt;
+									&lt;span class="title"&gt;jQuery&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class="progress progress-1"&gt;
+								&lt;div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"&gt;
+									&lt;span class="title"&gt;PHP&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;</pre>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-iconboxes">
+						<h2 class="page-header">Icon Boxes</h2>
+						
+						<h3 class="page-header">Centered Icons</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-iconboxes-centered.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+						&lt;div class="row marginbottom-30"&gt;
+
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box animate-divider sm-mb-30"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon"&gt;
+											&lt;i class="ion-ios-book-outline"&gt;&lt;/i&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Well Documented&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box animate-divider sm-mb-30"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon"&gt;
+											&lt;i class="ion-ios-speedometer-outline"&gt;&lt;/i&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Fast & Easy&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box animate-divider sm-mb-30"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon"&gt;
+											&lt;i class="ion-ios-settings"&gt;&lt;/i&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Fully Customizable&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;					
+							
+						&lt;/div&gt;
+						&lt;div class="row marginbottom-50"&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box animate-divider sm-mb-30"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon circle"&gt;
+											&lt;div class="icon-container"&gt;
+												&lt;i class="ion-ios-book-outline"&gt;&lt;/i&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Well Documented&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box animate-divider sm-mb-30"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon circle"&gt;
+											&lt;div class="icon-container"&gt;
+												&lt;i class="ion-ios-speedometer-outline"&gt;&lt;/i&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Fast & Easy&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box animate-divider sm-mb-30"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon circle"&gt;
+											&lt;div class="icon-container"&gt;
+												&lt;i class="ion-ios-settings"&gt;&lt;/i&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Fully Customizable&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+											
+						&lt;/div&gt;
+						&lt;div class="row marginbottom-50"&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box animate-divider sm-mb-30"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon square"&gt;
+											&lt;div class="icon-container"&gt;
+												&lt;i class="ion-ios-book-outline"&gt;&lt;/i&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Well Documented&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box animate-divider sm-mb-30"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon square"&gt;
+											&lt;div class="icon-container"&gt;
+												&lt;i class="ion-ios-speedometer-outline"&gt;&lt;/i&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Fast & Easy&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box animate-divider sm-mb-30"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon square"&gt;
+											&lt;div class="icon-container"&gt;
+												&lt;i class="ion-ios-settings"&gt;&lt;/i&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Fully Customizable&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+											
+						&lt;/div&gt;</pre>
+						
+						<h3 class="page-header">Center Bordered</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-iconboxes-bordered.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+						&lt;div class="row marginbottom-30"&gt;
+
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box bordered animate-divider sm-mb-30"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon"&gt;
+											&lt;i class="ion-ios-book-outline"&gt;&lt;/i&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Well Documented&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box bordered animate-divider sm-mb-30"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon"&gt;
+											&lt;i class="ion-ios-speedometer-outline"&gt;&lt;/i&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Fast & Easy&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box bordered animate-divider"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon"&gt;
+											&lt;i class="ion-ios-settings"&gt;&lt;/i&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Fully Customizable&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;					
+							
+						&lt;/div&gt;
+						&lt;div class="row marginbottom-30"&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box bordered animate-divider sm-mb-30"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon circle"&gt;
+											&lt;div class="icon-container"&gt;
+												&lt;i class="ion-ios-book-outline"&gt;&lt;/i&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Well Documented&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box bordered animate-divider sm-mb-30"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon circle"&gt;
+											&lt;div class="icon-container"&gt;
+												&lt;i class="ion-ios-speedometer-outline"&gt;&lt;/i&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Fast & Easy&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box bordered animate-divider"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon circle"&gt;
+											&lt;div class="icon-container"&gt;
+												&lt;i class="ion-ios-settings"&gt;&lt;/i&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Fully Customizable&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+											
+						&lt;/div&gt;
+						&lt;div class="row"&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box bordered animate-divider sm-mb-30"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon square"&gt;
+											&lt;div class="icon-container"&gt;
+												&lt;i class="ion-ios-book-outline"&gt;&lt;/i&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Well Documented&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box bordered animate-divider sm-mb-30"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon square"&gt;
+											&lt;div class="icon-container"&gt;
+												&lt;i class="ion-ios-speedometer-outline"&gt;&lt;/i&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Fast & Easy&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								&lt;div class="icon-box bordered animate-divider"&gt;
+									&lt;div class="box-container"&gt;
+										&lt;div class="icon-box-icon square"&gt;
+											&lt;div class="icon-container"&gt;
+												&lt;i class="ion-ios-settings"&gt;&lt;/i&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+										&lt;h3&gt;Fully Customizable&lt;/h3&gt;
+										&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+										&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+											
+						&lt;/div&gt;</pre>
+						
+						<h3 class="page-header">Small Left & Right</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-iconboxes-small.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+						&lt;div class="row"&gt;
+							&lt;div class="col-md-12 paddingbottom-50"&gt;
+								&lt;div class="row"&gt;
+
+									&lt;div class="col-md-4"&gt;
+										&lt;div class="icon-box style-2 nobottommargin sm-mb-30"&gt;
+											&lt;div class="box-container"&gt;
+												&lt;div class="icon-box-icon"&gt;
+													&lt;div class="icon-container"&gt;
+														&lt;div class="ic-icon"&gt;
+															&lt;i class="ion-ios-photos-outline"&gt;&lt;/i&gt;
+														&lt;/div&gt;
+													&lt;/div&gt;
+												&lt;/div&gt;
+												&lt;div class="icon-box-text"&gt;
+													&lt;div class="icon-box-lines-top"&gt;&lt;/div&gt;
+													&lt;div class="icon-box-lines-bottom"&gt;&lt;/div&gt;
+													&lt;h5 class="heading-uppercase"&gt;Parallax Background&lt;/h5&gt;
+													&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.&lt;/p&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+									
+									&lt;div class="col-md-4"&gt;
+										&lt;div class="icon-box style-2 nobottommargin sm-mb-30"&gt;
+											&lt;div class="icon-box-icon"&gt;
+												&lt;div class="icon-container"&gt;
+													&lt;div class="ic-icon"&gt;
+														&lt;i class="ion-ios-book-outline"&gt;&lt;/i&gt;
+													&lt;/div&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+											&lt;div class="icon-box-text"&gt;
+												&lt;div class="icon-box-lines-top"&gt;&lt;/div&gt;
+												&lt;div class="icon-box-lines-bottom"&gt;&lt;/div&gt;
+												&lt;h5 class="heading-uppercase"&gt;Well Documented&lt;/h5&gt;
+												&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.&lt;/p&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+									
+									&lt;div class="col-md-4"&gt;
+										&lt;div class="icon-box style-2 nobottommargin"&gt;
+											&lt;div class="icon-box-icon"&gt;
+												&lt;div class="icon-container"&gt;
+													&lt;div class="ic-icon"&gt;
+														&lt;i class="ion-ios-speedometer-outline"&gt;&lt;/i&gt;
+													&lt;/div&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+											&lt;div class="icon-box-text"&gt;
+												&lt;div class="icon-box-lines-top"&gt;&lt;/div&gt;
+												&lt;div class="icon-box-lines-bottom"&gt;&lt;/div&gt;
+												&lt;h5 class="heading-uppercase"&gt;Fast & Easy&lt;/h5&gt;
+												&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.&lt;/p&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class="col-md-12"&gt;
+								&lt;div class="row"&gt;
+
+									&lt;div class="col-md-4"&gt;
+										&lt;div class="icon-box style-2 icon-box-right nobottommargin sm-mb-30"&gt;
+											&lt;div class="icon-box-icon"&gt;
+												&lt;div class="icon-container"&gt;
+													&lt;div class="ic-icon"&gt;
+														&lt;i class="ion-ios-photos-outline"&gt;&lt;/i&gt;
+													&lt;/div&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+											&lt;div class="icon-box-text"&gt;
+												&lt;div class="icon-box-lines-top"&gt;&lt;/div&gt;
+												&lt;div class="icon-box-lines-bottom"&gt;&lt;/div&gt;
+												&lt;h5 class="heading-uppercase"&gt;Parallax Background&lt;/h5&gt;
+												&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.&lt;/p&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+									
+									&lt;div class="col-md-4"&gt;
+										&lt;div class="icon-box style-2 icon-box-right nobottommargin sm-mb-30"&gt;
+											&lt;div class="icon-box-icon"&gt;
+												&lt;div class="icon-container"&gt;
+													&lt;div class="ic-icon"&gt;
+														&lt;i class="ion-ios-book-outline"&gt;&lt;/i&gt;
+													&lt;/div&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+											&lt;div class="icon-box-text"&gt;
+												&lt;div class="icon-box-lines-top"&gt;&lt;/div&gt;
+												&lt;div class="icon-box-lines-bottom"&gt;&lt;/div&gt;
+												&lt;h5 class="heading-uppercase"&gt;Well Documented&lt;/h5&gt;
+												&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.&lt;/p&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+									
+									&lt;div class="col-md-4"&gt;
+										&lt;div class="icon-box style-2 icon-box-right nobottommargin"&gt;
+											&lt;div class="icon-box-icon"&gt;
+												&lt;div class="icon-container"&gt;
+													&lt;div class="ic-icon"&gt;
+														&lt;i class="ion-ios-speedometer-outline"&gt;&lt;/i&gt;
+													&lt;/div&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+											&lt;div class="icon-box-text"&gt;
+												&lt;div class="icon-box-lines-top"&gt;&lt;/div&gt;
+												&lt;div class="icon-box-lines-bottom"&gt;&lt;/div&gt;
+												&lt;h5 class="heading-uppercase"&gt;Fast & Easy&lt;/h5&gt;
+												&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.&lt;/p&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;</pre>
+						
+						<h3 class="page-header">Large Left & Right</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-iconboxes-large.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+						&lt;div class="row"&gt;
+							&lt;div class="col-md-12 paddingbottom-50"&gt;
+								&lt;div class="row"&gt;
+								
+									&lt;div class="col-md-6"&gt;
+										&lt;div class="icon-box style-2 large nobottommargin sm-mb-30"&gt;
+											&lt;div class="box-container"&gt;
+												&lt;div class="icon-box-icon"&gt;
+													&lt;div class="icon-container"&gt;
+														&lt;div class="ic-icon"&gt;
+															&lt;i class="ion-ios-photos-outline"&gt;&lt;/i&gt;
+														&lt;/div&gt;
+													&lt;/div&gt;
+												&lt;/div&gt;
+												&lt;div class="icon-box-text"&gt;
+													&lt;div class="icon-box-lines-top"&gt;&lt;/div&gt;
+													&lt;div class="icon-box-lines-bottom"&gt;&lt;/div&gt;
+													&lt;h5 class="heading-uppercase"&gt;Parallax Background&lt;/h5&gt;
+													&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+									
+									&lt;div class="col-md-6"&gt;
+										&lt;div class="icon-box style-2 large nobottommargin"&gt;
+											&lt;div class="icon-box-icon"&gt;
+												&lt;div class="icon-container"&gt;
+													&lt;div class="ic-icon"&gt;
+														&lt;i class="ion-ios-speedometer-outline"&gt;&lt;/i&gt;
+													&lt;/div&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+											&lt;div class="icon-box-text"&gt;
+												&lt;div class="icon-box-lines-top"&gt;&lt;/div&gt;
+												&lt;div class="icon-box-lines-bottom"&gt;&lt;/div&gt;
+												&lt;h5 class="heading-uppercase"&gt;Fast & Easy&lt;/h5&gt;
+												&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+									
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class="col-md-12"&gt;
+								&lt;div class="row"&gt;
+								
+									&lt;div class="col-md-6"&gt;
+										&lt;div class="icon-box style-2 icon-box-right large nobottommargin sm-mb-30"&gt;
+											&lt;div class="icon-box-icon"&gt;
+												&lt;div class="icon-container"&gt;
+													&lt;div class="ic-icon"&gt;
+														&lt;i class="ion-ios-photos-outline"&gt;&lt;/i&gt;
+													&lt;/div&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+											&lt;div class="icon-box-text"&gt;
+												&lt;div class="icon-box-lines-top"&gt;&lt;/div&gt;
+												&lt;div class="icon-box-lines-bottom"&gt;&lt;/div&gt;
+												&lt;h5 class="heading-uppercase"&gt;Parallax Background&lt;/h5&gt;
+												&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+									
+									&lt;div class="col-md-6"&gt;
+										&lt;div class="icon-box style-2 icon-box-right large nobottommargin"&gt;
+											&lt;div class="icon-box-icon"&gt;
+												&lt;div class="icon-container"&gt;
+													&lt;div class="ic-icon"&gt;
+														&lt;i class="ion-ios-speedometer-outline"&gt;&lt;/i&gt;
+													&lt;/div&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+											&lt;div class="icon-box-text"&gt;
+												&lt;div class="icon-box-lines-top"&gt;&lt;/div&gt;
+												&lt;div class="icon-box-lines-bottom"&gt;&lt;/div&gt;
+												&lt;h5 class="heading-uppercase"&gt;Fast & Easy&lt;/h5&gt;
+												&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. Excepteur sint occaecat cupidatat non proident.&lt;/p&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;</pre>
+						
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-countdowns">
+						<h2 class="page-header">Countdowns</h2>
+						<p>
+							<img src="img/shortcodes/shortcodes-countdown.png" alt="#" class="img-responsive img-center">
+						</p>
+						<p>You can set the countdown in <code>data-countdown</code>:</p>
+						<pre class="brush: html">
+						&lt;div class="countdown" data-countdown="2016/10/21 12:00:00"&gt;&lt;/div&gt;</pre>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-countto">
+						<h2 class="page-header">Count To</h2>
+						<p>
+							<img src="img/shortcodes/shortcodes-countto.png" alt="#" class="img-responsive img-center">
+						</p>
+						<p>You can set the numbers in <code>data-from</code> and <code>data-to</code>. Plugin documentation - <a class="scrollto" href="https://github.com/mhuggins/jquery-countTo" target="_blank">jQuery countTo</a>.</p>				
+						<pre class="brush: html">
+						&lt;div class="row"&gt;
+					
+							&lt;div class="col-sm-6 col-md-3"&gt;
+								&lt;div class="count-block"&gt;
+									&lt;span class="count-to number" data-from="0" data-to="750"&gt;&lt;/span&gt;
+									&lt;span class="text"&gt;Websites Design&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+							&lt;div class="col-sm-6 col-md-3"&gt;
+								&lt;div class="count-block"&gt;
+									&lt;span class="count-to number" data-from="0" data-to="570"&gt;&lt;/span&gt;
+									&lt;span class="text"&gt;Satisfied Clients&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+							&lt;div class="col-sm-6 col-md-3"&gt;
+								&lt;div class="count-block"&gt;
+									&lt;span class="count-to number" data-from="0" data-to="950"&gt;&lt;/span&gt;
+									&lt;span class="text"&gt;Subscribers&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+							&lt;div class="col-sm-6 col-md-3"&gt;
+								&lt;div class="count-block"&gt;
+									&lt;span class="count-to number" data-from="0" data-to="1210"&gt;&lt;/span&gt;
+									&lt;span class="text"&gt;Fans on Facebook&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							
+						&lt;/div&gt;</pre>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-tables">
+						<h2 class="page-header">Tables</h2>
+						<p>Read more about <a class="scrollto" href="http://getbootstrap.com/css/#tables" target="_blank">Bootstrap Tables</a>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-typography">
+						<h2 class="page-header">Typography</h2>
+						<p>The classic style for heading tags.</p>
+						<pre class="brush: html">
+							&lt;h1&gt;H1 Heading&lt;/h1&gt;
+							&lt;p&gt;Aenean a urna vestibulum, rhoncus ipsum non, congue eros. Ut mollis velit ut mi ultricies faucibus. Etiam sodales, lacus ut dictum sagittis, metus augue placerat felis, vitae vulputate diam tellus id nisl. Nullam sapien dolor, molestie ut ligula vel, tempus pulvinar ante. Maecenas gravida pellentesque erat.&lt;/p&gt;
+							&lt;h2&gt;H2 Heading&lt;/h2&gt;
+							&lt;p&gt;Aenean a urna vestibulum, rhoncus ipsum non, congue eros. Ut mollis velit ut mi ultricies faucibus. Etiam sodales, lacus ut dictum sagittis, metus augue placerat felis, vitae vulputate diam tellus id nisl. Nullam sapien dolor, molestie ut ligula vel, tempus pulvinar ante. Maecenas gravida pellentesque erat.&lt;/p&gt;
+							&lt;h3&gt;H3 Heading&lt;/h3&gt;
+							&lt;p&gt;Aenean a urna vestibulum, rhoncus ipsum non, congue eros. Ut mollis velit ut mi ultricies faucibus. Etiam sodales, lacus ut dictum sagittis, metus augue placerat felis, vitae vulputate diam tellus id nisl. Nullam sapien dolor, molestie ut ligula vel, tempus pulvinar ante. Maecenas gravida pellentesque erat.&lt;/p&gt;
+							&lt;h4&gt;H4 Heading&lt;/h4&gt;
+							&lt;p&gt;Aenean a urna vestibulum, rhoncus ipsum non, congue eros. Ut mollis velit ut mi ultricies faucibus. Etiam sodales, lacus ut dictum sagittis, metus augue placerat felis, vitae vulputate diam tellus id nisl. Nullam sapien dolor, molestie ut ligula vel, tempus pulvinar ante. Maecenas gravida pellentesque erat.&lt;/p&gt;
+							&lt;h5&gt;H5 Heading&lt;/h5&gt;
+							&lt;p&gt;Aenean a urna vestibulum, rhoncus ipsum non, congue eros. Ut mollis velit ut mi ultricies faucibus. Etiam sodales, lacus ut dictum sagittis, metus augue placerat felis, vitae vulputate diam tellus id nisl. Nullam sapien dolor, molestie ut ligula vel, tempus pulvinar ante. Maecenas gravida pellentesque erat.&lt;/p&gt;
+							&lt;h6 class="nobottommargin"&gt;H6 Heading&lt;/h6&gt;
+							&lt;p class="nomargin"&gt;Aenean a urna vestibulum, rhoncus ipsum non, congue eros. Ut mollis velit ut mi ultricies faucibus. Etiam sodales, lacus ut dictum sagittis, metus augue placerat felis, vitae vulputate diam tellus id nisl. Nullam sapien dolor, molestie ut ligula vel, tempus pulvinar ante. Maecenas gravida pellentesque erat.&lt;/p&gt;</pre>
+						
+						<p>The uppercase style for heading tags. Make it by adding the class <code>heading-uppercase</code>.</p>
+						<pre class="brush: html">
+							&lt;h1 class="heading-uppercase"&gt;H1 Heading&lt;/h1&gt;
+							&lt;p&gt;Aenean a urna vestibulum, rhoncus ipsum non, congue eros. Ut mollis velit ut mi ultricies faucibus. Etiam sodales, lacus ut dictum sagittis, metus augue placerat felis, vitae vulputate diam tellus id nisl. Nullam sapien dolor, molestie ut ligula vel, tempus pulvinar ante. Maecenas gravida pellentesque erat.&lt;/p&gt;
+							&lt;h2 class="heading-uppercase"&gt;H2 Heading&lt;/h2&gt;
+							&lt;p&gt;Aenean a urna vestibulum, rhoncus ipsum non, congue eros. Ut mollis velit ut mi ultricies faucibus. Etiam sodales, lacus ut dictum sagittis, metus augue placerat felis, vitae vulputate diam tellus id nisl. Nullam sapien dolor, molestie ut ligula vel, tempus pulvinar ante. Maecenas gravida pellentesque erat.&lt;/p&gt;
+							&lt;h3 class="heading-uppercase"&gt;H3 Heading&lt;/h3&gt;
+							&lt;p&gt;Aenean a urna vestibulum, rhoncus ipsum non, congue eros. Ut mollis velit ut mi ultricies faucibus. Etiam sodales, lacus ut dictum sagittis, metus augue placerat felis, vitae vulputate diam tellus id nisl. Nullam sapien dolor, molestie ut ligula vel, tempus pulvinar ante. Maecenas gravida pellentesque erat.&lt;/p&gt;
+							&lt;h4 class="heading-uppercase"&gt;H4 Heading&lt;/h4&gt;
+							&lt;p&gt;Aenean a urna vestibulum, rhoncus ipsum non, congue eros. Ut mollis velit ut mi ultricies faucibus. Etiam sodales, lacus ut dictum sagittis, metus augue placerat felis, vitae vulputate diam tellus id nisl. Nullam sapien dolor, molestie ut ligula vel, tempus pulvinar ante. Maecenas gravida pellentesque erat.&lt;/p&gt;
+							&lt;h5 class="heading-uppercase"&gt;H5 Heading&lt;/h5&gt;
+							&lt;p&gt;Aenean a urna vestibulum, rhoncus ipsum non, congue eros. Ut mollis velit ut mi ultricies faucibus. Etiam sodales, lacus ut dictum sagittis, metus augue placerat felis, vitae vulputate diam tellus id nisl. Nullam sapien dolor, molestie ut ligula vel, tempus pulvinar ante. Maecenas gravida pellentesque erat.&lt;/p&gt;
+							&lt;h6 class="heading-uppercase nobottommargin"&gt;H6 Heading&lt;/h6&gt;
+							&lt;p class="nomargin"&gt;Aenean a urna vestibulum, rhoncus ipsum non, congue eros. Ut mollis velit ut mi ultricies faucibus. Etiam sodales, lacus ut dictum sagittis, metus augue placerat felis, vitae vulputate diam tellus id nisl. Nullam sapien dolor, molestie ut ligula vel, tempus pulvinar ante. Maecenas gravida pellentesque erat.&lt;/p&gt;</pre>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-blockquotes">
+						<h2 class="page-header">Blockquotes</h2>
+						
+						<h3 class="page-header">Default</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-blockquote.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;blockquote&gt;
+								&lt;p&gt;Nam lacinia at lorem id luctus. Donec sed tincidunt quam, eu tincidunt purus. Vivamus quis nulla enim. Morbi dapibus imperdiet sem nec consectetur. Morbi cursus porta tellus, sit amet congue nunc posuere sit amet.&lt;/p&gt;
+							&lt;/blockquote&gt;</pre>
+							
+						<h3 class="page-header">With Footer</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-blockquote-footer.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;blockquote&gt;
+								&lt;p&gt;Nam lacinia at lorem id luctus. Donec sed tincidunt quam, eu tincidunt purus. Vivamus quis nulla enim. Morbi dapibus imperdiet sem nec consectetur. Morbi cursus porta tellus, sit amet congue nunc posuere sit amet.&lt;/p&gt;
+								&lt;footer&gt;John Doe, Google Inc.&lt;/footer&gt;
+							&lt;/blockquote&gt;
+							
+							&lt;blockquote class="blockquote-reverse"&gt;
+								&lt;p class="text-right"&gt;Nam lacinia at lorem id luctus. Donec sed tincidunt quam, eu tincidunt purus. Vivamus quis nulla enim. Morbi dapibus imperdiet sem nec consectetur. Morbi cursus porta tellus, sit amet congue nunc posuere sit amet.&lt;/p&gt;
+								&lt;footer&gt;John Doe, Google Inc.&lt;/footer&gt;
+							&lt;/blockquote&gt;</pre>
+							
+						<h3 class="page-header">With Content</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-blockquote-content.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+							&lt;blockquote class="pull-left"&gt;
+								&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+								&lt;footer&gt;John Doe&lt;/footer&gt;
+							&lt;/blockquote&gt;
+							&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, dolor, necessitatibus, temporibus ipsa autem eveniet assumenda laboriosam minima recusandae earum delectus quia voluptatum eligendi consequuntur vero eaque reprehenderit quidem neque incidunt laborum aliquid ea cumque repellendus alias nesciunt commodi esse architecto. Sunt, illum ad eligendi vitae quos iste accusantium iure beatae dolore perferendis quis quasi odio ea at suscipit nobis sapiente reprehenderit aperiam! Eligendi, dicta, magnam numquam a aliquid labore sint iure officia asperiores similique delectus quod ab natus quidem adipisci nostrum amet quasi doloremque laborum nam corporis eaque et vel ipsam unde cumque quos. Officiis, facere, commodi, tempora sunt quidem rem officia magnam alias amet nobis dolores blanditiis delectus.&lt;/p&gt;</pre>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-grid">
+						<h2 class="page-header">Grid Structure</h2>
+						<p>Read more about <a class="scrollto" href="http://getbootstrap.com/css/#grid" target="_blank">Bootstrap Grid</a></p>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-dividers">
+						<h2 class="page-header">Dividers</h2>
+						<p>The alternative style.</p>
+						<pre class="brush: html">
+							&lt;div class="divider-alt"&gt;&lt;/div&gt;</pre>
+							
+						<p>The standard style.</p>
+						<pre class="brush: html">
+							&lt;div class="col-md-4 sm-mb-30"&gt;
+								[...]
+								&lt;div class="divider divider-left divider-dark"&gt;&lt;/div&gt;
+								[...]
+							&lt;/div&gt;
+							
+							&lt;div class="col-md-4 sm-mb-30"&gt;
+								[...]
+								&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+								[...]
+							&lt;/div&gt;
+							
+							&lt;div class="col-md-4"&gt;
+								[...]
+								&lt;div class="divider divider-right divider-dark"&gt;&lt;/div&gt;
+								[...]
+							&lt;/div&gt;</pre>
+							
+						<p>The animated standard style.</p>
+						<pre class="brush: html">
+						&lt;div class="col-md-4 animate-divider sm-mb-30"&gt;
+							[...]
+							&lt;div class="divider divider-left divider-dark"&gt;&lt;/div&gt;
+							[...]
+						&lt;/div&gt;
+						
+						&lt;div class="col-md-4 animate-divider sm-mb-30"&gt;
+							[...]
+							&lt;div class="divider divider-center divider-dark"&gt;&lt;/div&gt;
+							[...]
+						&lt;/div&gt;
+						
+						&lt;div class="col-md-4 animate-divider"&gt;
+							[...]
+							&lt;div class="divider divider-right divider-dark"&gt;&lt;/div&gt;
+							[...]
+						&lt;/div&gt;</pre>
+					
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-pagination">
+						<h2 class="page-header">Pagination</h2>
+						<p>Read more about <a class="scrollto" href="http://getbootstrap.com/components/#pagination" target="_blank">Bootstrap Pagination</a></p>		
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-clients">
+						<h2 class="page-header">Clients</h2>
+						
+						<h3 class="page-header">Scrolling Carousel</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-clients-carousel.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+						&lt;div class="flex-carousel flexslider"&gt;
+							&lt;ul class="slides"&gt;
+								&lt;li&gt;
+									&lt;img src="demo/images/clients/client-1.png" alt=""&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;img src="demo/images/clients/client-2.png" alt=""&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;img src="demo/images/clients/client-3.png" alt=""&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;img src="demo/images/clients/client-4.png" alt=""&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;img src="demo/images/clients/client-5.png" alt=""&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;img src="demo/images/clients/client-6.png" alt=""&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;img src="demo/images/clients/client-7.png" alt=""&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;img src="demo/images/clients/client-8.png" alt=""&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/div&gt;</pre>
+						
+						<h3 class="page-header">Fullwidth Scrolling Carousel</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-clients-carousel-full.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+						&lt;div class="container-fluid nopadding"&gt;
+						
+							&lt;div class="flex-carousel flexslider" data-max-items="8"&gt;
+								&lt;ul class="slides"&gt;
+									&lt;li&gt;
+										&lt;img src="demo/images/clients/client-1.png" alt=""&gt;
+									&lt;/li&gt;
+									&lt;li&gt;
+										&lt;img src="demo/images/clients/client-2.png" alt=""&gt;
+									&lt;/li&gt;
+									&lt;li&gt;
+										&lt;img src="demo/images/clients/client-3.png" alt=""&gt;
+									&lt;/li&gt;
+									&lt;li&gt;
+										&lt;img src="demo/images/clients/client-4.png" alt=""&gt;
+									&lt;/li&gt;
+									&lt;li&gt;
+										&lt;img src="demo/images/clients/client-5.png" alt=""&gt;
+									&lt;/li&gt;
+									&lt;li&gt;
+										&lt;img src="demo/images/clients/client-6.png" alt=""&gt;
+									&lt;/li&gt;
+									&lt;li&gt;
+										&lt;img src="demo/images/clients/client-7.png" alt=""&gt;
+									&lt;/li&gt;
+									&lt;li&gt;
+										&lt;img src="demo/images/clients/client-8.png" alt=""&gt;
+									&lt;/li&gt;
+									&lt;li&gt;
+										&lt;img src="demo/images/clients/client-5.png" alt=""&gt;
+									&lt;/li&gt;
+									&lt;li&gt;
+										&lt;img src="demo/images/clients/client-3.png" alt=""&gt;
+									&lt;/li&gt;
+								&lt;/ul&gt;
+							&lt;/div&gt;	
+							
+						&lt;/div&gt;</pre>
+						
+						<h3 class="page-header">Grid - 4 Columns</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-clients-4col.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+						&lt;div class="row clients-row"&gt;
+							&lt;div class="col-md-3 col-sm-6 client border-bottom border-right"&gt;
+								&lt;img src="demo/images/clients/client-1.png" alt="" /&gt;
+							&lt;/div&gt;
+							&lt;div class="col-md-3 col-sm-6 client border-bottom border-right"&gt;
+								&lt;img src="demo/images/clients/client-2.png" alt="" /&gt;
+							&lt;/div&gt;
+							&lt;div class="col-md-3 col-sm-6 client border-bottom border-right"&gt;
+								&lt;img src="demo/images/clients/client-3.png" alt="" /&gt;
+							&lt;/div&gt;
+							&lt;div class="col-md-3 col-sm-6 client border-bottom"&gt;
+								&lt;img src="demo/images/clients/client-4.png" alt="" /&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class="row clients-row"&gt;
+							&lt;div class="col-md-3 col-sm-6 client border-right"&gt;
+								&lt;img src="demo/images/clients/client-5.png" alt="" /&gt;
+							&lt;/div&gt;
+							&lt;div class="col-md-3 col-sm-6 client border-right"&gt;
+								&lt;img src="demo/images/clients/client-6.png" alt="" /&gt;
+							&lt;/div&gt;
+							&lt;div class="col-md-3 col-sm-6 client border-right"&gt;
+								&lt;img src="demo/images/clients/client-7.png" alt="" /&gt;
+							&lt;/div&gt;
+							&lt;div class="col-md-3 col-sm-6 client"&gt;
+								&lt;img src="demo/images/clients/client-8.png" alt="" /&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;</pre>
+						
+						<h3 class="page-header">Grid - 3 Columns</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-clients-3col.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+						&lt;div class="row"&gt;
+							&lt;div class="col-md-10 col-md-offset-1"&gt;
+								&lt;div class="row clients-row"&gt;
+									&lt;div class="col-md-4 client border-bottom border-right"&gt;
+										&lt;img src="demo/images/clients/client-1.png" alt="" /&gt;
+									&lt;/div&gt;
+									&lt;div class="col-md-4 client border-bottom border-right"&gt;
+										&lt;img src="demo/images/clients/client-2.png" alt="" /&gt;
+									&lt;/div&gt;
+									&lt;div class="col-md-4 client border-bottom"&gt;
+										&lt;img src="demo/images/clients/client-4.png" alt="" /&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class="row clients-row"&gt;
+									&lt;div class="col-md-4 client border-right"&gt;
+										&lt;img src="demo/images/clients/client-5.png" alt="" /&gt;
+									&lt;/div&gt;
+									&lt;div class="col-md-4 client border-right"&gt;
+										&lt;img src="demo/images/clients/client-6.png" alt="" /&gt;
+									&lt;/div&gt;
+									&lt;div class="col-md-4 client"&gt;
+										&lt;img src="demo/images/clients/client-8.png" alt="" /&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;</pre>
+						
+						<h3 class="page-header">Grid - 2 Columns</h3>
+						<p>
+							<img src="img/shortcodes/shortcodes-clients-2col.png" alt="#" class="img-responsive img-center">
+						</p>
+						<pre class="brush: html">
+						&lt;div class="row"&gt;
+							&lt;div class="col-md-8 col-md-offset-2"&gt;
+								&lt;div class="row clients-row"&gt;
+									&lt;div class="col-md-6 col-sm-6 client border-bottom border-right"&gt;
+										&lt;img src="demo/images/clients/client-1.png" alt="" /&gt;
+									&lt;/div&gt;
+									&lt;div class="col-md-6 col-sm-6 client border-bottom"&gt;
+										&lt;img src="demo/images/clients/client-4.png" alt="" /&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class="row clients-row"&gt;
+									&lt;div class="col-md-6 col-sm-6 client border-right"&gt;
+										&lt;img src="demo/images/clients/client-5.png" alt="" /&gt;
+									&lt;/div&gt;
+									&lt;div class="col-md-6 col-sm-6 client"&gt;
+										&lt;img src="demo/images/clients/client-8.png" alt="" /&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;</pre>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-social">
+						<h2 class="page-header">Social Icons</h2>
+						
+						<p>Style 1</p>
+						<pre class="brush: html">
+							&lt;div class="row fontawesome-icon-list margin-bottom-lg"&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-adn"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-android"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-angellist"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-apple"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-behance"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-behance-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-bitbucket"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-bitbucket-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-bitcoin"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-btc"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-buysellads"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-cc-amex"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-cc-discover"&gt;&lt;/i&gt;&lt;/a&gt;					
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-cc-mastercard"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-cc-paypal"&gt;&lt;/i&gt; cc-paypal&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-cc-stripe"&gt;&lt;/i&gt; cc-stripe&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-cc-visa"&gt;&lt;/i&gt; cc-visa&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-codepen"&gt;&lt;/i&gt; codepen&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-connectdevelop"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-css3"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-dashcube"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-delicious"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-deviantart"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-digg"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-dribbble"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-dropbox"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-drupal"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-empire"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-facebook-f"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-facebook-official"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-facebook-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-flickr"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-forumbee"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-foursquare"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-ge"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-git"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-git-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-github"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-github-alt"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-github-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-gittip"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-google"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-google-plus"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-google-plus-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-google-wallet"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-gratipay"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-hacker-news"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-html5"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-ioxhost"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-joomla"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-jsfiddle"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-lastfm"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-lastfm-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-leanpub"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-linkedin-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-linux"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-maxcdn"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-meanpath"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-medium"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-openid"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-pagelines"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-paypal"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-pied-piper"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-pied-piper-alt"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-pinterest"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-pinterest-p"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-pinterest-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-qq"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-ra"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-rebel"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-reddit"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-reddit-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-renren"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-sellsy"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-share-alt"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-share-alt-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-shirtsinbulk"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-simplybuilt"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-skyatlas"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-skype"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-slack"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-slideshare"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-soundcloud"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-spotify"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-stack-exchange"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-stack-overflow"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-steam"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-steam-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-stumbleupon"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-stumbleupon-circle"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-tencent-weibo"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-trello"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-tumblr"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-tumblr-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-twitch"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-twitter-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-viacoin"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-vimeo-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-vine"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-vk"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-wechat"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-weibo"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-weixin"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-whatsapp"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-windows"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-wordpress"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-xing"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-xing-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-yahoo"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-yelp"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-youtube"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-youtube-play"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon" href="#"&gt;&lt;i class="fa fa-youtube-square"&gt;&lt;/i&gt;&lt;/a&gt;				
+							&lt;/div&gt;</pre>
+							
+						<p>Style 2</p>
+						<pre class="brush: html">
+							&lt;div class="row fontawesome-icon-list margin-bottom-lg"&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-adn"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-android"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-angellist"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-apple"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-behance"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-behance-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-bitbucket"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-bitbucket-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-bitcoin"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-btc"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-buysellads"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-cc-amex"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-cc-discover"&gt;&lt;/i&gt;&lt;/a&gt;					
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-cc-mastercard"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-cc-paypal"&gt;&lt;/i&gt; cc-paypal&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-cc-stripe"&gt;&lt;/i&gt; cc-stripe&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-cc-visa"&gt;&lt;/i&gt; cc-visa&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-codepen"&gt;&lt;/i&gt; codepen&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-connectdevelop"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-css3"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-dashcube"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-delicious"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-deviantart"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-digg"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-dribbble"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-dropbox"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-drupal"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-empire"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-facebook-f"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-facebook-official"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-facebook-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-flickr"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-forumbee"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-foursquare"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-ge"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-git"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-git-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-github"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-github-alt"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-github-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-gittip"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-google"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-google-plus"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-google-plus-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-google-wallet"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-gratipay"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-hacker-news"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-html5"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-ioxhost"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-joomla"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-jsfiddle"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-lastfm"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-lastfm-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-leanpub"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-linkedin-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-linux"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-maxcdn"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-meanpath"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-medium"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-openid"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-pagelines"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-paypal"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-pied-piper"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-pied-piper-alt"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-pinterest"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-pinterest-p"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-pinterest-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-qq"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-ra"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-rebel"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-reddit"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-reddit-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-renren"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-sellsy"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-share-alt"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-share-alt-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-shirtsinbulk"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-simplybuilt"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-skyatlas"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-skype"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-slack"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-slideshare"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-soundcloud"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-spotify"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-stack-exchange"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-stack-overflow"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-steam"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-steam-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-stumbleupon"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-stumbleupon-circle"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-tencent-weibo"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-trello"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-tumblr"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-tumblr-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-twitch"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-twitter-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-viacoin"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-vimeo-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-vine"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-vk"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-wechat"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-weibo"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-weixin"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-whatsapp"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-windows"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-wordpress"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-xing"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-xing-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-yahoo"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-yelp"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-youtube"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-youtube-play"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-rounded" href="#"&gt;&lt;i class="fa fa-youtube-square"&gt;&lt;/i&gt;&lt;/a&gt;				
+							&lt;/div&gt;</pre>
+							
+						<p>Style 3</p>
+						<pre class="brush: html">
+							&lt;div class="row fontawesome-icon-list margin-bottom-lg"&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-adn"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-android"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-angellist"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-apple"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-behance"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-behance-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-bitbucket"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-bitbucket-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-bitcoin"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-btc"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-buysellads"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-cc-amex"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-cc-discover"&gt;&lt;/i&gt;&lt;/a&gt;					
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-cc-mastercard"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-cc-paypal"&gt;&lt;/i&gt; cc-paypal&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-cc-stripe"&gt;&lt;/i&gt; cc-stripe&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-cc-visa"&gt;&lt;/i&gt; cc-visa&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-codepen"&gt;&lt;/i&gt; codepen&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-connectdevelop"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-css3"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-dashcube"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-delicious"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-deviantart"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-digg"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-dribbble"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-dropbox"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-drupal"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-empire"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-facebook-f"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-facebook-official"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-facebook-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-flickr"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-forumbee"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-foursquare"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-ge"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-git"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-git-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-github"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-github-alt"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-github-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-gittip"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-google"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-google-plus"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-google-plus-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-google-wallet"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-gratipay"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-hacker-news"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-html5"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-ioxhost"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-joomla"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-jsfiddle"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-lastfm"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-lastfm-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-leanpub"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-linkedin-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-linux"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-maxcdn"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-meanpath"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-medium"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-openid"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-pagelines"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-paypal"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-pied-piper"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-pied-piper-alt"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-pinterest"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-pinterest-p"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-pinterest-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-qq"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-ra"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-rebel"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-reddit"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-reddit-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-renren"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-sellsy"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-share-alt"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-share-alt-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-shirtsinbulk"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-simplybuilt"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-skyatlas"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-skype"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-slack"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-slideshare"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-soundcloud"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-spotify"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-stack-exchange"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-stack-overflow"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-steam"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-steam-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-stumbleupon"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-stumbleupon-circle"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-tencent-weibo"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-trello"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-tumblr"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-tumblr-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-twitch"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-twitter-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-viacoin"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-vimeo-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-vine"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-vk"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-wechat"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-weibo"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-weixin"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-whatsapp"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-windows"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-wordpress"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-xing"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-xing-square"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-yahoo"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-yelp"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-youtube"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-youtube-play"&gt;&lt;/i&gt;&lt;/a&gt;
+								&lt;a class="social-icon social-clear" href="#"&gt;&lt;i class="fa fa-youtube-square"&gt;&lt;/i&gt;&lt;/a&gt;				
+							&lt;/div&gt;</pre>
+						
+					</div>
+					
+					<div class="bs-docs-box" id="docs-shortcodes-listing">
+						<h2 class="page-header">Listing</h2>
+						<p>List grou.</p>
+						<pre class="brush: html">
+							&lt;ul class="list-group"&gt;
+								&lt;li class="list-group-item"&gt;Cras justo odio&lt;/li&gt;
+								&lt;li class="list-group-item"&gt;Dapibus ac facilisis in&lt;/li&gt;
+								&lt;li class="list-group-item"&gt;Morbi leo risus&lt;/li&gt;
+								&lt;li class="list-group-item"&gt;Porta ac consectetur ac&lt;/li&gt;
+								&lt;li class="list-group-item"&gt;Vestibulum at eros&lt;/li&gt;
+							&lt;/ul&gt;</pre>
+							
+						<p>List group with badges.</p>
+						<pre class="brush: html">
+							&lt;ul class="list-group"&gt;
+								&lt;li class="list-group-item"&gt;Cras justo odio  &lt;span class="badge"&gt;14&lt;/span&gt;&lt;/li&gt;
+								&lt;li class="list-group-item"&gt;Dapibus ac facilisis in  &lt;span class="badge"&gt;1&lt;/span&gt;&lt;/li&gt;
+								&lt;li class="list-group-item"&gt;Morbi leo risus  &lt;span class="badge"&gt;7&lt;/span&gt;&lt;/li&gt;
+								&lt;li class="list-group-item"&gt;Porta ac consectetur ac  &lt;span class="badge"&gt;9&lt;/span&gt;&lt;/li&gt;
+								&lt;li class="list-group-item"&gt;Vestibulum at eros  &lt;span class="badge"&gt;21&lt;/span&gt;&lt;/li&gt;
+							&lt;/ul&gt;</pre>
+							
+						<p>Icon List</p>
+						<pre class="brush: html">
+							&lt;ul class="listing iconlist nobottommargin"&gt;
+								&lt;li&gt;&lt;i class="fa fa-question-circle"&gt;&lt;/i&gt; &lt;a href="#"&gt;What is Nantria ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;i class="fa fa-code"&gt;&lt;/i&gt; &lt;a href="#"&gt;What are Sections ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;i class="fa fa-comments"&gt;&lt;/i&gt; &lt;a href="#"&gt;How can I leave comments on posts ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;i class="fa fa-file-text-o"&gt;&lt;/i&gt; &lt;a href="#"&gt;How to create a new page ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;i class="fa fa-paper-plane"&gt;&lt;/i&gt; &lt;a href="#"&gt;How to Integrate with MailChimp&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;i class="fa fa-font"&gt;&lt;/i&gt; &lt;a href="#"&gt;How to change thank you message depending on the language used ?&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;</pre>
+							
+						<p>Disc List</p>
+						<pre class="brush: html">
+							&lt;ul class="listing disclist nobottommargin"&gt;
+								&lt;li&gt;&lt;a href="#"&gt;What is Nantria ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;What are Sections ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How can I leave comments on posts ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to create a new page ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to Integrate with MailChimp&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to change thank you message depending on the language used ?&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;</pre>
+							
+						<p>Square List</p>
+						<pre class="brush: html">
+							&lt;ul class="listing squarelist nobottommargin"&gt;
+								&lt;li&gt;&lt;a href="#"&gt;What is Nantria ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;What are Sections ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How can I leave comments on posts ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to create a new page ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to Integrate with MailChimp&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to change thank you message depending on the language used ?&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;</pre>
+							
+						<p>Decimal List</p>
+						<pre class="brush: html">
+							&lt;ul class="listing decimallist nobottommargin"&gt;
+								&lt;li&gt;&lt;a href="#"&gt;What is Nantria ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;What are Sections ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How can I leave comments on posts ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to create a new page ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to Integrate with MailChimp&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to change thank you message depending on the language used ?&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;</pre>
+							
+						<p>Roman List</p>
+						<pre class="brush: html">
+							&lt;ul class="listing romanlist nobottommargin"&gt;
+								&lt;li&gt;&lt;a href="#"&gt;What is Nantria ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;What are Sections ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How can I leave comments on posts ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to create a new page ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to Integrate with MailChimp&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to change thank you message depending on the language used ?&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;</pre>
+							
+						<p>Greek List</p>
+						<pre class="brush: html">
+							&lt;ul class="listing greeklist nobottommargin"&gt;
+								&lt;li&gt;&lt;a href="#"&gt;What is Nantria ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;What are Sections ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How can I leave comments on posts ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to create a new page ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to Integrate with MailChimp&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to change thank you message depending on the language used ?&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;</pre>
+							
+						<p>lower Alpha List</p>
+						<pre class="brush: html">
+							&lt;ul class="listing loweralphalist nobottommargin"&gt;
+								&lt;li&gt;&lt;a href="#"&gt;What is Nantria ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;What are Sections ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How can I leave comments on posts ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to create a new page ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to Integrate with MailChimp&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to change thank you message depending on the language used ?&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;</pre>
+							
+						<p>Upper Alpha List</p>
+						<pre class="brush: html">
+							&lt;ul class="listing upperalphalist nobottommargin"&gt;
+								&lt;li&gt;&lt;a href="#"&gt;What is Nantria ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;What are Sections ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How can I leave comments on posts ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to create a new page ?&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to Integrate with MailChimp&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;How to change thank you message depending on the language used ?&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;</pre>
+					</div>
+
+				</div>			
+			</div>
+
+		</div>
+	</div><!-- /.container -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>Copyright &copy; 2016 by <a target="_blank" href="http://themeforest.net/user/bluminethemes">Bluminethemes</a>. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<a class="scrollto back-to-top" href="#top"><i class="fa fa-angle-up"></i></a>
+
+	<script>
+		SyntaxHighlighter.all();
+	</script>
+</body>
+</html>

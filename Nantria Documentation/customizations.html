@@ -1,0 +1,1860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Bluminethemes.com">
+
+    <title>Customization | Nantria Documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for documentation page -->
+    <link href="documentation.css" rel="stylesheet">
+	<link rel="stylesheet" href="syntax-highlighter/shCore.css" /> <!-- Syntax Highlighter -->
+	<link rel="stylesheet" href="syntax-highlighter/shThemeDefault.css" /> <!-- Syntax Highlighter default theme -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	
+	<!-- ==============================================
+	JS
+	=============================================== -->
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
+	<script type="text/javascript" src="js/jquery.easing.js"></script> <!-- jquery.easing -->
+	<script type="text/javascript" src="syntax-highlighter/shCore.js"></script> <!-- Syntax Highlighter -->
+	<script type="text/javascript" src="syntax-highlighter/shBrushJScript.js"></script> <!-- Syntax Highlighter Brush -->
+	<script type="text/javascript" src="syntax-highlighter/shBrushXml.js"></script> <!-- Syntax Highlighter Xml Brush -->
+	<script type="text/javascript" src="syntax-highlighter/shBrushPhp.js"></script> <!-- Syntax Highlighter Php Brush -->
+	<script type="text/javascript" src="js/smoothscroll.js"></script> <!-- Smoothscroll -->
+	<script type="text/javascript" src="js/documentation.js"></script> <!-- Smoothscroll -->
+	
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	
+	<div id="top"></div>
+	
+    <nav class="site-nav navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Nantria Documentation</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse navbar-right">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="customizations.html">Customization</a></li>
+					<li><a href="shortcodes.html">Shortcodes</a></li>
+					<li><a href="credits.html">Credits</a></li>
+					<li><a href="changelog.html">Changelog</a></li>
+					<li><a href="support.html">Support</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+    </nav>
+
+	<header class="bt-docs-header">
+		<div class="container-fluid">
+			<h1>Documentation</h1>
+			<p class="lead">Using Nantria - Multi-purpose Site Template.</p>
+		</div>
+	</header>
+	
+    <div class="container-fluid bt-docs-container">
+		<div class="row">
+		
+			<div class="col-md-3 sidebar-overlay hidden-xs hidden-sm"></div>
+			<div class="col-md-3 col-sidebar" role="complementary">
+				<nav class="bt-docs-sidebar">
+					<ul class="nav nav-stacked bt-docs-sidenav">
+						<li>
+							<a href="#docs-start" class="scrollto">Start</a>
+							<ul class="nav">
+								<li><a href="#docs-start-instalation" class="scrollto">Installation</a></li>
+								<li><a href="#docs-start-html" class="scrollto">HTML Structure</a></li>
+								<li><a href="#docs-start-logo" class="scrollto">Logo Settings</a></li>
+								<li><a href="#docs-start-schemes" class="scrollto">Color Schemes</a></li>
+								<li><a href="#docs-start-fonts" class="scrollto">Changing Fonts</a></li>
+								<li><a href="#docs-start-optimization" class="scrollto">Optimization Tips</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#docs-header" class="scrollto">Header</a>
+							<ul class="nav">
+								<li><a href="#docs-header-menustyles" class="scrollto">Header Styles</a></li>
+								<li><a href="#docs-menu-megamenus" class="scrollto">Mega Menus</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#docs-footer" class="scrollto">Footer</a>
+							<ul class="nav">
+								<li><a href="#docs-footer-styles" class="scrollto">Footer Styles</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#docs-page-elements" class="scrollto">Page Elements</a>
+							<ul class="nav">
+								<li><a href="#docs-page-elements-title" class="scrollto">Page Title</a></li>
+								<li><a href="#docs-page-elements-grid" class="scrollto">Grid</a></li>
+								<li><a href="#docs-page-elements-helper" class="scrollto">Helper Classes</a></li>
+								<li><a href="#docs-page-elements-snippets" class="scrollto">Useful Snippets</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#docs-widgets" class="scrollto">Widgets</a>
+							<ul class="nav">
+								<li><a href="#docs-widgets-setup" class="scrollto">Setup</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#docs-forms" class="scrollto">Forms</a>
+							<ul class="nav">
+								<li><a href="#docs-form-contact" class="scrollto">Contact</a></li>
+								<li><a href="#docs-form-subscription" class="scrollto">Subscription</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="col-md-9 col-content" role="main">
+			
+				<div class="bs-docs-section">
+					
+					<h1 id="docs-start" class="page-header">Start</h1>
+				
+					<div class="bs-docs-box first" id="docs-start-instalation">
+						<h2 class="page-header">Installation</h2>
+						<p>Follow the steps below to get started with your Site Template:</p>
+						<ol>
+							<li>Open the <code>main-download</code> Folder to find all the Templates Files</li>
+							<li>You will need to Upload these files to your Web Server using FTP in order to use it on your Website.</li>
+							<li>Make sure you upload the required files/folders listed below:
+								<ul>
+									<li><code>html/css</code> - Extra Stylesheets Folder</li>
+									<li><code>html/include</code> - Required PHP Functions Folder</li>
+									<li><code>html/images</code> - Images Folder</li>
+									<li><code>html/js</code> - Javacripts Folder</li>
+									<li><code>html/style.css</code> - Main Stylesheet File</li>
+									<li><code>html/index.html</code> - Index File/Homepage</li>
+								</ul>
+								The other files can be used according to your preferences.
+							</li>
+							<li>You're now good to go..! Start adding your Content and show off your Brand New Beautiful Website in style.</li>
+						</ol>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-start-html">
+						<h2 class="page-header">HTML Structure</h2>
+						<p>Nantria follows a simple coding structure. here is the sample:</p>
+						<pre class="brush: html">
+							&lt;!DOCTYPE html&gt;
+							&lt;!--[if IE 7]&gt;    &lt;html class="no-js ie7 oldie" lang="en-US"&gt; &lt;![endif]--&gt;
+							&lt;!--[if IE 8]&gt;    &lt;html class="no-js ie8 oldie" lang="en-US"&gt; &lt;![endif]--&gt;
+							&lt;!--[if gt IE 8]&gt;&lt;!--&gt; &lt;html class="no-js" lang="en-US"&gt;  &lt;!--&lt;![endif]--&gt;
+								&lt;head&gt;
+								
+								&lt;!-- Your Stylesheets, Scripts &amp; Title --&gt;
+
+
+								&lt;/head&gt;
+								&lt;body&gt;
+									
+									&lt;div id="preloader"&gt;
+										&lt;div id="loading-animation"&gt;&lt;/div&gt;
+									&lt;/div&gt;
+									
+									&lt;div class="main-container"&gt;
+									
+										&lt;div id="top"&gt;&lt;/div&gt;
+									
+										&lt;header class="main-header style-1 transparent"&gt;
+											
+											...
+											
+										&lt;/header&gt;
+										
+										&lt;!-- Site Content --&gt;
+										&lt;section class="section"&gt;
+											&lt;div class="section-container"&gt;
+												&lt;div class="container"&gt;
+
+													...
+
+												&lt;/div&gt;
+											&lt;/div&gt;
+										&lt;/section&gt;
+
+										
+										&lt;!-- Footer --&gt;
+										&lt;footer class="site-footer section"&gt;
+											&lt;div class="section-container"&gt;
+												&lt;div class="container"&gt;
+													
+													...
+													
+												&lt;/div&gt;
+												&lt;!-- Copyright --&gt;
+												&lt;div class="copyright background-grey"&gt;
+													&lt;div class="container"&gt;
+														
+														...
+														
+													&lt;/div&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+										&lt;/footer&gt;
+										
+									&lt;/div&gt;
+
+									&lt;!-- Your Scripts --&gt;
+									
+								&lt;/body&gt;
+							&lt;/html&gt;</pre>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-start-layout">
+						<h3 class="page-header">Layout Settings</h3>
+						<p>This Theme Supports both Boxed & Wide Layouts. Adding the class .boxed-layout to the <body> will turn your website into a Boxed Layout:</p>
+						<pre class="brush: html">&lt;body class="boxed-layout"&gt;</pre>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-start-favicons">
+						<h3 class="page-header">Favicons & Apple Touch Icons</h3>
+						<p>You can add a Favicon to your Website using the following code:</p>
+						<pre class="brush: html">
+							&lt;link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16"&gt;</pre>						
+						<p>You can add Apple Touch Icons to your Website using the following code:</p>
+						<pre class="brush: html">
+							&lt;link rel="apple-touch-icon" href="images/apple-touch-icon.png"&gt;
+							&lt;link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png"&gt;
+							&lt;link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"&gt;</pre>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-start-logo">
+						<h2 class="page-header">Logo Settings</h2>
+						<p>The Logo Container can be found in the Header - <code>.main-header</code></p>
+						<pre class="brush: html">
+							&lt;div class="header-logo"&gt;
+								&lt;a href="index.html"&gt;
+									&lt;img src="images/logo-light.png" class="logo-light" alt=""&gt;
+									&lt;img src="images/logo-dark.png" class="logo-dark" alt=""&gt;
+								&lt;/a&gt;
+							&lt;/div&gt;</pre>
+						<p><span class="label label-danger">Note</span> The Logo Image's maximum height can be <strong>60px</strong>. Also make sure you also add the Dark Logo which provides even more intuitiveness when you switch between Light/Dark Scheme. However, it is optional.</p>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-start-schemes">
+						<h2 class="page-header">Color Schemes</h2>
+						<p>You can change your Website's Color Scheme in an instant. You simply need to change the HEX Color Code in the <code>css/colors.css</code> file &amp; you are good to go. Follow these quick steps to get going:</p>
+						<ol>
+							<li>
+								<p>Make sure you add the <code>css/colors.css</code> stylesheet in your head after the responsive stylesheets.</p>
+								<pre class="brush: html">
+									&lt;head&gt;
+									
+										...
+										
+										&lt;!-- CSS Global Compulsory --&gt;
+										&lt;link rel="stylesheet" href="css/bootstrap.min.css"&gt;
+										&lt;link rel="stylesheet" href="style.css"&gt;
+										&lt;link rel="stylesheet" href="css/style-green.css"&gt;
+										
+										&lt;!-- CSS Implementing Plugins --&gt;
+										&lt;link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"&gt;
+										&lt;link rel="stylesheet" href="css/ionicons.min.css" type="text/css"&gt;
+										&lt;link rel="stylesheet" href="css/animate.min.css" type="text/css"&gt;
+										&lt;link rel="stylesheet" href="css/flexslider.css" type="text/css"&gt;
+										&lt;link rel="stylesheet" href="css/swiper.min.css" type="text/css"&gt;
+										&lt;link rel="stylesheet" href="css/magnific-popup.css" type="text/css"&gt;
+										&lt;link rel="stylesheet" href="css/owl.carousel.css" type="text/css"&gt;
+										&lt;link rel="stylesheet" href="css/select2.min.css"&gt;
+										&lt;link rel="stylesheet" href="css/vegas.min.css"&gt;
+										
+										&lt;link rel="stylesheet" href="css/custom.css"&gt;
+
+										&lt;!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --&gt;
+										&lt;!--[if lt IE 9]&gt;
+											&lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+											&lt;script src="js/respond.min.js"&gt;&lt;/script&gt;
+										&lt;![endif]--&gt;
+										
+										&lt;!--[if lt IE 11]&gt;
+											&lt;link rel="stylesheet" type="text/css" href="css/ie.css"&gt;
+										&lt;![endif]--&gt;
+
+										&lt;!-- Here goes your colors.css --&gt;
+										&lt;link rel="stylesheet" href="css/colors.css" type="text/css"&gt;
+										
+										...
+									
+									&lt;/head&gt;</pre>
+							</li>
+							<li>Now simply change the HEX Codes according to your requirements.</li>
+						</ol>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-start-fonts">
+						<h2 class="page-header">Changing Fonts</h2>
+						<p>By default, Nantria uses 2 Fonts namely: <code>Open Sans</code> and <code>Raleway</code> from the <a href="http://www.google.com/fonts" target="_blank">Google Fonts Library</a>. You can find the Linking to the Font Files in the <code>head</code> tag of all the <code>.html</code> files.</p>
+						<pre class="brush: html">
+						&lt;!-- FONTS --&gt;
+						&lt;link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic%7CRoboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'&gt;</pre>
+						<p>In order to change the Fonts, you will need to Edit the Above Links with your Custom Font if you plan to use a Google Font or Remove it complete if you plan to use a Self Hosted font. Here is an Example for using <a href="http://css-tricks.com/snippets/css/using-font-face/" target="_blank">Self Hosted Fonts</a>.</p>
+					</div>	
+						
+					<div class="bs-docs-box" id="docs-start-optimization">
+						<h2 class="page-header">Website Optimization Tips</h2>
+						<p>A Fast &amp; Optimized Website has several factors which needs to be implemented in order to achieve the desired results. There are several Optimization Techniques available which will definitely affect your Website's Performance in a Positive Way &amp; we want to share a few of them with you:</p>
+						<ol>
+							<li>gZip Compression & Browser Caching</li>
+							<li>Image Compression & Optimization</li>
+							<li>CSS & jQuery Minifications</li>
+							<li>Fast Web Hosting Servers</li>
+						</ol>
+					</div>
+				
+				</div>
+			
+				<div class="bs-docs-section">
+				
+					<h1 id="docs-header" class="page-header">Header</h1>
+				
+					<div class="bs-docs-box" id="docs-header-menustyles">
+						<h2 class="page-header">Header Styles</h2>
+						
+						<p>Please check files for example: features-header-style-X-X.html</p>
+						
+					</div>
+					
+					<div class="bs-docs-box" id="docs-menu-megamenus">
+						<h2 class="page-header">Mega Menus</h2>
+						<p>You can start using the Mega Menu in 2,3,4 & 5 Columns. Try using the Following code:</p>
+						<pre class="brush: html">
+						&lt;header class="main-header style-1 transparent"&gt;
+							&lt;div class="header-wrapper"&gt;
+							
+								&lt;nav class="header-nav light"&gt;
+									&lt;div class="nav-wrapper"&gt;					
+										&lt;div class="container-fluid"&gt;
+										
+											&lt;div class="nav-block left block-widgets"&gt;
+												&lt;button type="button" class="nav-toggle"&gt;
+													&lt;i class="ion-navicon"&gt;&lt;/i&gt;
+												&lt;/button&gt;
+												&lt;div class="header-logo"&gt;
+													&lt;a href="index.html"&gt;
+														&lt;img src="images/logo-light.png" class="logo-light" alt=""&gt;
+														&lt;img src="images/logo-dark.png" class="logo-dark" alt=""&gt;
+													&lt;/a&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+											
+											&lt;div class="nav-block right block-widgets"&gt;
+												&lt;div class="header-functions"&gt;
+													&lt;div class="header-widgets"&gt;
+													
+														&lt;!-- Top Search --&gt;
+														&lt;div class="header-widget top-search" data-trigger="click"&gt;
+															&lt;a href="#" id="top-search-trigger" class="trigger-widget"&gt;&lt;i class="ion-ios-search-strong"&gt;&lt;/i&gt;&lt;/a&gt;
+															&lt;div class="widget-content"&gt;
+																&lt;form class="nomargin"&gt;
+																	&lt;input class="form-control nobottommargin" type="text" placeholder="Type Here"&gt;
+																&lt;/form&gt;
+															&lt;/div&gt;
+														&lt;/div&gt;
+														
+														&lt;!-- Top Cart --&gt;
+														&lt;div class="header-widget top-cart" data-trigger="click"&gt;
+															&lt;a href="#" id="top-cart-trigger" class="trigger-widget"&gt;
+																&lt;i class="ion-bag"&gt;&lt;/i&gt;
+																&lt;span&gt;2&lt;/span&gt;
+															&lt;/a&gt;
+															&lt;div class="widget-content"&gt;
+																&lt;div class="top-cart-items"&gt;
+																	&lt;div class="top-cart-item"&gt;
+																		&lt;div class="item-image"&gt;
+																			&lt;a href="#"&gt;&lt;img src="demo/images/shop/product-1a-thumb.jpg" alt="Checked Ultimate Blouse"&gt;&lt;/a&gt;
+																		&lt;/div&gt;
+																		&lt;div class="item-desc"&gt;
+																			&lt;a href="#"&gt;Checked Ultimate Blouse&lt;/a&gt;
+																			&lt;span class="item-price"&gt;$39.99&lt;/span&gt;
+																			&lt;span class="item-quantity"&gt;x 2&lt;/span&gt;
+																		&lt;/div&gt;
+																	&lt;/div&gt;
+																	&lt;div class="top-cart-item"&gt;
+																		&lt;div class="item-image"&gt;
+																			&lt;a href="#"&gt;&lt;img src="demo/images/shop/product-2-thumb.jpg" alt="Pink Scarf"&gt;&lt;/a&gt;
+																		&lt;/div&gt;
+																		&lt;div class="item-desc"&gt;
+																			&lt;a href="#"&gt;Pink Scarf&lt;/a&gt;
+																			&lt;span class="item-price"&gt;$14.99&lt;/span&gt;
+																			&lt;span class="item-quantity"&gt;x 1&lt;/span&gt;
+																		&lt;/div&gt;
+																	&lt;/div&gt;
+																&lt;/div&gt;
+																&lt;div class="top-cart-action"&gt;
+																	&lt;span class="top-checkout-price"&gt;$94.97&lt;/span&gt;
+																	&lt;a href="#" class="button button-mini button-border button-rounded nomargin"&gt;View Cart&lt;/a&gt;
+																&lt;/div&gt;
+															&lt;/div&gt;
+														&lt;/div&gt;
+														
+													&lt;/div&gt;						
+												&lt;/div&gt;
+											&lt;/div&gt;
+
+											&lt;div class="nav-block right block-menu"&gt;
+												&lt;ul class="menu"&gt;
+
+													&lt;li class="bt-dropdown"&gt;
+														&lt;a href="#" class="dropdown-toggle"&gt;Home &lt;i class="fa fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
+														&lt;ul class="bt-dropdown-menu" role="menu"&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Home - Classic&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li&gt;&lt;a href="home-classic-1.html"&gt;Classic - Layout 1&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Home - Agency&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li&gt;&lt;a href="home-agency-1.html"&gt;Agency - Layout 1&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="home-agency-2.html"&gt;Agency - Layout 2&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Home - Portfolio&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li&gt;&lt;a href="home-portfolio-1.html"&gt;Portfolio - Layout 1&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="home-portfolio-2.html"&gt;Portfolio - Layout 2&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li&gt;&lt;a href="home-photography-1.html"&gt;Home - Photography&lt;/a&gt;&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Home - App Landing&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li&gt;&lt;a href="home-app-1.html"&gt;App Landing - Layout 1&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="home-app-2.html"&gt;App Landing - Layout 2&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Home - Fitness&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li&gt;&lt;a href="home-fitness-1.html"&gt;Fitness - Layout 1&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="home-fitness-2.html"&gt;Fitness - Layout 2&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li&gt;&lt;a href="home-restaurant-1.html"&gt;Home - Restaurant&lt;/a&gt;&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Home - Blog&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li&gt;&lt;a href="home-blog-1.html"&gt;Blog - Layout 1&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="home-blog-2.html"&gt;Blog - Layout 2&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Home - Shop&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li&gt;&lt;a href="home-shop-1.html"&gt;Shop - Layout 1&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="home-shop-2.html"&gt;Shop - Layout 2&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Home - Fullscreen&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li&gt;&lt;a href="home-fullscreen-image.html"&gt;Fullscreen - Image&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="home-fullscreen-slider.html"&gt;Fullscreen - Slider&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="home-fullscreen-video.html"&gt;Fullscreen - Video&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+														&lt;/ul&gt;
+													&lt;/li&gt;
+
+													&lt;li class="bt-dropdown"&gt;
+														&lt;a href="#" class="dropdown-toggle"&gt;Features &lt;i class="fa fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
+														&lt;ul class="bt-dropdown-menu" role="menu"&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Sliders&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li class="dropdown-submenu"&gt;
+																		&lt;a&gt;Revolution Slider&lt;/a&gt;
+																		&lt;ul class="bt-dropdown-menu"&gt;
+																			&lt;li&gt;&lt;a href="features-revolution-slider.html"&gt;Fullscreen&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-revolution-slider-fullwidth.html"&gt;Fullwidth&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-revolution-slider-kenburns.html"&gt;Kenburns Effect&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-revolution-slider-video-gallery.html"&gt;Video Gallery&lt;/a&gt;&lt;/li&gt;
+																		&lt;/ul&gt;
+																	&lt;/li&gt;
+																	&lt;li class="dropdown-submenu"&gt;
+																		&lt;a&gt;Swiper Slider&lt;/a&gt;
+																		&lt;ul class="bt-dropdown-menu"&gt;
+																			&lt;li&gt;&lt;a href="features-swiper-slider.html"&gt;Fullscreen&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-swiper-slider-fullwidth.html"&gt;Fullwidth&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-swiper-slider-thumbs-gallery.html"&gt;Thumbs Gallery&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-swiper-slider-fade.html"&gt;Fade Effect&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-swiper-slider-parallax.html"&gt;Parallax Effect&lt;/a&gt;&lt;/li&gt;
+																		&lt;/ul&gt;
+																	&lt;/li&gt;
+																	&lt;li class="dropdown-submenu"&gt;
+																		&lt;a&gt;Flex Slider&lt;/a&gt;
+																		&lt;ul class="bt-dropdown-menu"&gt;
+																			&lt;li&gt;&lt;a href="features-flex-slider.html"&gt;Default Layout&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-flex-slider-with-thumbs.html"&gt;With Thumbs&lt;/a&gt;&lt;/li&gt;
+																		&lt;/ul&gt;
+																	&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li&gt;&lt;a href="features-widgets.html"&gt;Widgets&lt;/a&gt;&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Intro Sections&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li&gt;&lt;a href="features-intro-style-1.html"&gt;Intro - Style 1&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-intro-style-2.html"&gt;Intro - Style 2&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-intro-style-3.html"&gt;Intro - Style 3&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-intro-style-4.html"&gt;Intro - Style 4&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-intro-style-5.html"&gt;Intro - Style 5&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-intro-style-6.html"&gt;Intro - Style 6&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-intro-style-7.html"&gt;Intro - Style 7&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-intro-style-8.html"&gt;Intro - Style 8&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-intro-style-9.html"&gt;Intro - Style 9&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-intro-style-10.html"&gt;Intro - Style 10&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Headers&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li class="dropdown-submenu"&gt;
+																		&lt;a&gt;Style 1&lt;/a&gt;
+																		&lt;ul class="bt-dropdown-menu"&gt;
+																			&lt;li&gt;&lt;a href="features-header-style-1-light.html"&gt;Light&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-header-style-1-dark.html"&gt;Dark&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-header-style-1-transparent.html"&gt;Transparent&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-header-style-1-semilight.html"&gt;Semi Light&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-header-style-1-semidark.html"&gt;Semi Dark&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-header-style-1-light-narrow.html"&gt;Narrow&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-header-style-1-light-alternative.html"&gt;Alternative&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-header-style-1-transparent-staticsticky.html"&gt;Static Sticky&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-header-style-1-light-top-bar-blocked.html"&gt;Blocked&lt;/a&gt;&lt;/li&gt;
+																		&lt;/ul&gt;
+																	&lt;/li&gt;
+																	&lt;li class="dropdown-submenu"&gt;
+																		&lt;a&gt;Style 2&lt;/a&gt;
+																		&lt;ul class="bt-dropdown-menu"&gt;
+																			&lt;li&gt;&lt;a href="features-header-style-2-light.html"&gt;Light&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-header-style-2-dark.html"&gt;Dark&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-header-style-2-transparent.html"&gt;Transparent&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-header-style-2-light-alternative-narrow.html"&gt;Narrow&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-header-style-2-transparent-staticsticky.html"&gt;Static Sticky&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-header-style-2-light-top-bar-blocked.html"&gt;Blocked&lt;/a&gt;&lt;/li&gt;
+																		&lt;/ul&gt;
+																	&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Footer Styles&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li&gt;&lt;a href="features-footer-style-1.html"&gt;Footer - Style 1&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-footer-style-2.html"&gt;Footer - Style 2&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-footer-style-3.html"&gt;Footer - Style 3&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-footer-style-4.html"&gt;Footer - Style 4&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-footer-style-5.html"&gt;Footer - Style 5&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-footer-style-6.html"&gt;Footer - Style 6&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-footer-style-7.html"&gt;Footer - Style 7&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-footer-style-8.html"&gt;Footer - Style 8&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Page Titles&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li&gt;&lt;a href="features-page-title-left.html"&gt;Left Align&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-page-title-right.html"&gt;Right Align&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-page-title-center.html"&gt;Center Align&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-page-title-dark.html"&gt;Dark Style&lt;/a&gt;&lt;/li&gt;
+																	&lt;li class="dropdown-submenu"&gt;
+																		&lt;a&gt;Image Background&lt;/a&gt;
+																		&lt;ul class="bt-dropdown-menu"&gt;
+																			&lt;li&gt;&lt;a href="features-page-title-image.html"&gt;Default Menu&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-page-title-image-transparent-menu.html"&gt;Transparent Menu&lt;/a&gt;&lt;/li&gt;
+																		&lt;/ul&gt;
+																	&lt;/li&gt;
+																	&lt;li class="dropdown-submenu"&gt;
+																		&lt;a&gt;Parallax Background&lt;/a&gt;
+																		&lt;ul class="bt-dropdown-menu"&gt;
+																			&lt;li&gt;&lt;a href="features-page-title-parallax.html"&gt;Default Menu&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-page-title-parallax-transparent-menu.html"&gt;Transparent Menu&lt;/a&gt;&lt;/li&gt;
+																		&lt;/ul&gt;
+																	&lt;/li&gt;
+																	&lt;li class="dropdown-submenu"&gt;
+																		&lt;a&gt;HTML5 Video&lt;/a&gt;
+																		&lt;ul class="bt-dropdown-menu"&gt;
+																			&lt;li&gt;&lt;a href="features-page-title-html5-video.html"&gt;Default Menu&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="features-page-title-html5-video-transparent-menu.html"&gt;Transparent Menu&lt;/a&gt;&lt;/li&gt;
+																		&lt;/ul&gt;
+																	&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-page-title-nobg.html"&gt;No Background&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-page-title-large.html"&gt;Large Version&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="features-page-title-xlarge.html"&gt;xLarge Version&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+														&lt;/ul&gt;
+													&lt;/li&gt;
+													
+													&lt;li class="bt-dropdown mega-menu"&gt;
+														&lt;a href="#" class="dropdown-toggle"&gt;Pages &lt;i class="fa fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
+														&lt;ul class="bt-dropdown-menu" role="menu"&gt;
+															&lt;li&gt;
+																&lt;div class="mega-menu-content image-background bg-bottom-left" style="background-image: url('demo/images/nav-bg.jpg');"&gt;
+																	&lt;div class="row"&gt;
+																		&lt;ul class="col-sm-3 list-unstyled"&gt;
+																			&lt;li class="list-header"&gt;Page Layouts&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="about-1.html"&gt;About Us - Layout 1&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="about-2.html"&gt;About Us - Layout 2&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="about-3.html"&gt;About Us - Layout 3&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="about-me-1.html"&gt;About Me&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="services-1.html"&gt;Services 1&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="services-2.html"&gt;Services 2&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="services-3.html"&gt;Services 3&lt;/a&gt;&lt;/li&gt;	
+																		&lt;/ul&gt;
+																		&lt;ul class="col-sm-3 list-unstyled"&gt;
+																			&lt;li class="list-header"&gt;Page Layouts&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="pricing-1.html"&gt;Pricing - Layout 1&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="pricing-2.html"&gt;Pricing - Layout 2&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="contact-1.html"&gt;Contact - Layout 1&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="contact-2.html"&gt;Contact - Layout 2&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="contact-3.html"&gt;Contact - Layout 3&lt;/a&gt;&lt;/li&gt;	
+																			&lt;li&gt;&lt;a href="faq-1.html"&gt;FAQ - Layout 1&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="faq-2.html"&gt;FAQ - Layout 2&lt;/a&gt;&lt;/li&gt;	
+																		&lt;/ul&gt;
+																		&lt;ul class="col-sm-3 list-unstyled"&gt;
+																			&lt;li class="list-header"&gt;Page Layouts&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="knowledge-1.html"&gt;Knowledge Base - Layout 1&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="knowledge-2.html"&gt;Knowledge Base - Layout 2&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="knowledge-3.html"&gt;Knowledge Base - Layout 3&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="right-sidebar.html"&gt;Right Sidebar&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="left-sidebar.html"&gt;Left Sidebar&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="both-sidebar.html"&gt;Both Sidebar&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="both-right-sidebar.html"&gt;Both Right Sidebar&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="both-left-sidebar.html"&gt;Both Left Sidebar&lt;/a&gt;&lt;/li&gt;
+																		&lt;/ul&gt;
+																		&lt;ul class="col-sm-3 list-unstyled"&gt;
+																			&lt;li class="list-header"&gt;Page Layouts&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="blank-page.html"&gt;Blank Page&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="coming-soon-layout-1.html"&gt;Coming Soon - Style 1&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="coming-soon-layout-2.html"&gt;Coming Soon - Style 2&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="login-1.html"&gt;Login - Style 1&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="login-2.html"&gt;Login - Style 2&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="404.html"&gt;404 - Image&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="404-video.html"&gt;404 - HTML5 Video&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="500.html"&gt;500 - Image&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="500-video.html"&gt;500 - HTML5 Video&lt;/a&gt;&lt;/li&gt;
+																		&lt;/ul&gt;
+																	&lt;/div&gt;
+																&lt;/div&gt;
+															&lt;/li&gt;
+														&lt;/ul&gt;
+													&lt;/li&gt;
+													
+													&lt;li class="bt-dropdown"&gt;
+														&lt;a href="#" class="dropdown-toggle"&gt;Portfolio &lt;i class="fa fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
+														&lt;ul class="bt-dropdown-menu" role="menu"&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Grid&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li&gt;&lt;a href="portfolio-1-margin.html"&gt;1 Column&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="portfolio-2-margin.html"&gt;2 Columns&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="portfolio-3-margin.html"&gt;3 Columns&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="portfolio-4-margin.html"&gt;4 Columns&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="portfolio-5-margin.html"&gt;5 Columns&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Masonry&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li&gt;&lt;a href="portfolio-mixed-masonry-margin.html"&gt;Mixed Columns&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="portfolio-2-masonry-margin.html"&gt;2 Columns&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="portfolio-3-masonry-margin.html"&gt;3 Columns&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="portfolio-4-masonry-margin.html"&gt;4 Columns&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="portfolio-5-masonry-margin.html"&gt;5 Columns&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Single Project&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu"&gt;
+																	&lt;li&gt;&lt;a href="portfolio-project-single-1.html"&gt;Project Single 1&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="portfolio-project-single-2.html"&gt;Project Single 2&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="portfolio-project-single-3.html"&gt;Project Single 3&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+														&lt;/ul&gt;
+													&lt;/li&gt;
+													
+													&lt;li class="bt-dropdown"&gt;
+														&lt;a href="#" class="dropdown-toggle"&gt;Blog &lt;i class="fa fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
+														&lt;ul class="bt-dropdown-menu" role="menu"&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Default&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu menu-pos-invert"&gt;
+																	&lt;li&gt;&lt;a href="blog-left-sidebar.html"&gt;Left Sidebar&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="blog-right-sidebar.html"&gt;Right Sidebar&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="blog-both-sidebar.html"&gt;Both Sidebar&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="blog-fullwidth.html"&gt;Fullwidth&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Simple&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu menu-pos-invert"&gt;
+																	&lt;li&gt;&lt;a href="blog-simple-left-sidebar.html"&gt;Left Sidebar&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="blog-simple-right-sidebar.html"&gt;Right Sidebar&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="blog-simple.html"&gt;Fullwidth&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Masonry&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu menu-pos-invert"&gt;
+																	&lt;li&gt;&lt;a href="blog-masonry-mixed-col.html"&gt;Mixed Columns&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="blog-masonry-2col.html"&gt;2 Columns&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="blog-masonry-3col.html"&gt;3 Columns&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="blog-masonry-4col.html"&gt;4 Columns&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Single&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu menu-pos-invert"&gt;
+																	&lt;li&gt;&lt;a href="blog-single-sidebar-right.html"&gt;Right Sidebar&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="blog-single-sidebar-left.html"&gt;Left Sidebar&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="blog-single-no-sidebar.html"&gt;No Sidebar&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="blog-single-split-right-sidebar.html"&gt;Split Right Sidebar&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="blog-single-split-left-sidebar.html"&gt;Split Left Sidebar&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="blog-single-disqus-comments.html"&gt;Disqus Comments&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+														&lt;/ul&gt;
+													&lt;/li&gt;
+													
+													&lt;li class="bt-dropdown"&gt;
+														&lt;a href="#" class="dropdown-toggle"&gt;Shop &lt;i class="fa fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
+														&lt;ul class="bt-dropdown-menu" role="menu"&gt;
+															&lt;li&gt;&lt;a href="shop-4col-fullwidth.html"&gt;4 Columns&lt;/a&gt;&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;3 Columns&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu menu-pos-invert"&gt;
+																	&lt;li&gt;&lt;a href="shop-3col-fullwidth.html"&gt;Fullwidth&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="shop-3col-sidebar-right.html"&gt;Right Sidebar&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="shop-3col-sidebar-left.html"&gt;Left Sidebar&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;2 Columns&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu menu-pos-invert"&gt;
+																	&lt;li&gt;&lt;a href="shop-2col-fullwidth.html"&gt;Fullwidth&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="shop-2col-sidebar-right.html"&gt;Right Sidebar&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="shop-2col-sidebar-left.html"&gt;Left Sidebar&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="shop-2col-sidebar-both.html"&gt;Both Sidebar&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;List&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu menu-pos-invert"&gt;
+																	&lt;li&gt;&lt;a href="shop-list-fullwidth.html"&gt;Fullwidth&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="shop-list-sidebar-right.html"&gt;Right Sidebar&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="shop-list-sidebar-left.html"&gt;Left Sidebar&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li class="dropdown-submenu"&gt;
+																&lt;a&gt;Single Product&lt;/a&gt;
+																&lt;ul class="bt-dropdown-menu menu-pos-invert"&gt;
+																	&lt;li&gt;&lt;a href="shop-single.html"&gt;Fullwidth&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="shop-single-right-sidebar.html"&gt;Right Sidebar&lt;/a&gt;&lt;/li&gt;
+																	&lt;li&gt;&lt;a href="shop-single-left-sidebar.html"&gt;Left Sidebar&lt;/a&gt;&lt;/li&gt;
+																&lt;/ul&gt;
+															&lt;/li&gt;
+															&lt;li&gt;&lt;a href="shop-checkout.html"&gt;Checkout&lt;/a&gt;&lt;/li&gt;
+														&lt;/ul&gt;
+													&lt;/li&gt;
+													
+													&lt;li class="bt-dropdown mega-menu"&gt;
+														&lt;a href="#" class="dropdown-toggle"&gt;Shortcodes &lt;i class="fa fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
+														&lt;ul class="bt-dropdown-menu" role="menu"&gt;
+															&lt;li&gt;
+																&lt;div class="mega-menu-content image-background bg-bottom-left" style="background-image: url('demo/images/nav-bg.jpg');"&gt;
+																	&lt;div class="row"&gt;
+																		&lt;ul class="col-sm-3 list-unstyled"&gt;
+																			&lt;li class="list-header"&gt;Shortcodes&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-animations.html"&gt;Animations&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-buttons.html"&gt;Buttons&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-carousel.html"&gt;Carousel&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-tabs.html"&gt;Tabbed Content&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-accordions.html"&gt;Accordions&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-alerts.html"&gt;Alerts&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-tooltips.html"&gt;Tooltips&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-progress.html"&gt;Progress Bars&lt;/a&gt;&lt;/li&gt;
+																		&lt;/ul&gt;
+																		&lt;ul class="col-sm-3 list-unstyled"&gt;
+																			&lt;li class="list-header"&gt;Shortcodes&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-feature-box.html"&gt;Feature Box&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-icon-boxes.html"&gt;Icon Boxes&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-form-inputs.html"&gt;Form Inputs&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-countdowns.html"&gt;Countdowns&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-countto.html"&gt;Count To&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-lightbox.html"&gt;Lightbox&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-portfolio.html"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-products.html"&gt;Products&lt;/a&gt;&lt;/li&gt;
+																		&lt;/ul&gt;
+																		&lt;ul class="col-sm-3 list-unstyled"&gt;
+																			&lt;li class="list-header"&gt;Shortcodes&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-pricing-tables.html"&gt;Pricing Tables&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-tables.html"&gt;Tables&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-maps.html"&gt;Maps&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-typography.html"&gt;Typography&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-blockquotes.html"&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-grid.html"&gt;Grid Structure&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-dividers.html"&gt;Dividers&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-modal.html"&gt;Modal Boxes&lt;/a&gt;&lt;/li&gt;
+																		&lt;/ul&gt;
+																		&lt;ul class="col-sm-3 list-unstyled"&gt;
+																			&lt;li class="list-header"&gt;Shortcodes&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-pagination.html"&gt;Pagination&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-clients.html"&gt;Clients&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-testimonials.html"&gt;Testimonials&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-profile-card.html"&gt;Profile Cards&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-social-icons.html"&gt;Social Icons&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-media-embeds.html"&gt;Media Embeds&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-galleries.html"&gt;Image Galleries&lt;/a&gt;&lt;/li&gt;
+																			&lt;li&gt;&lt;a href="shortcodes-listing.html"&gt;Listing&lt;/a&gt;&lt;/li&gt;
+																		&lt;/ul&gt;
+																	&lt;/div&gt;
+																&lt;/div&gt;
+															&lt;/li&gt;
+														&lt;/ul&gt;
+													&lt;/li&gt;
+
+												&lt;/ul&gt;
+											&lt;/div&gt;
+
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/nav&gt;
+								
+							&lt;/div&gt;
+						&lt;/header&gt;
+						&lt;!-- .main-header end --&gt;</pre>
+					</div>
+					
+				</div>
+				
+				<div class="bs-docs-section">
+				
+					<h1 id="docs-footer" class="page-header">Footer</h1>
+				
+					<div class="bs-docs-box first" id="docs-footer-styles">
+						<h2 class="page-header">Footer Styles</h2>
+						
+						<p>Footer - Style 1</p>
+						<pre class="brush:html">
+						&lt;!-- Footer --&gt;
+						&lt;footer class="site-footer section nobottompadding background-grey"&gt;
+							&lt;div class="section-container"&gt;
+								&lt;div class="container"&gt;
+									&lt;div class="row"&gt;
+										&lt;div class="col-md-4 col-sm-6"&gt;
+											&lt;aside class="widget widget_text"&gt;
+												&lt;h5 class="widget-title"&gt;About Us&lt;/h5&gt;
+												&lt;p&gt;We are creative developers. Made by Bluminethemes is sign under beautiful site templates created by us for people like us.&lt;/p&gt;
+											&lt;/aside&gt;
+										&lt;/div&gt;
+										&lt;div class="col-md-2 col-md-offset-2 col-sm-6"&gt;
+											&lt;aside class="widget widget_text"&gt;
+												&lt;h5 class="widget-title"&gt;About&lt;/h5&gt;
+												&lt;ul&gt;
+													&lt;li&gt;&lt;a href="about-1.html"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="about-2.html"&gt;Investors&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="about-3.html"&gt;Careers&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="home-blog-1.html"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="faq-2.html"&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+												&lt;/ul&gt;
+											&lt;/aside&gt;
+										&lt;/div&gt;
+										&lt;div class="col-md-2 col-sm-6"&gt;
+											&lt;aside class="widget widget_text"&gt;
+												&lt;h5 class="widget-title"&gt;Services&lt;/h5&gt;
+												&lt;ul&gt;
+													&lt;li&gt;&lt;a href="services-1.html"&gt;Graphic Design&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="services-2.html"&gt;Web Development&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="services-3.html"&gt;Copywriting&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="services-1.html"&gt;Branding&lt;/a&gt;&lt;/li&gt;
+												&lt;/ul&gt;
+											&lt;/aside&gt;
+										&lt;/div&gt;
+										&lt;div class="col-md-2 col-sm-6"&gt;
+											&lt;aside class="widget widget_text"&gt;
+												&lt;h5 class="widget-title"&gt;Introduction&lt;/h5&gt;
+												&lt;ul&gt;
+													&lt;li&gt;&lt;a href="about-1.html"&gt;Team Members&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="about-1.html"&gt;Testimonials&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="about-1.html"&gt;Our Clients&lt;/a&gt;&lt;/li&gt;
+												&lt;/ul&gt;
+											&lt;/aside&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;!-- Copyright --&gt;
+								&lt;div class="copyright background-white"&gt;
+									&lt;div class="container"&gt;
+										&lt;div class="row"&gt;
+											&lt;div class="col-md-6 col-sm-6 text-left text-dark"&gt;
+											© 2016 Nantria - All Rights Reserved
+											&lt;/div&gt;
+											&lt;div class="col-md-6 col-sm-6"&gt;
+												&lt;nav class="socials-icons pull-right"&gt;
+													&lt;ul&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-googleplus"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-pinterest"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-dribbble-outline"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+													&lt;/ul&gt;
+												&lt;/nav&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;&lt;!-- .copyright end --&gt;
+							&lt;/div&gt;
+						&lt;/footer&gt;&lt;!-- .site-footer end --&gt;</pre>
+						
+						<p>Footer - Style 2</p>
+						<pre class="brush:html">
+						&lt;!-- Footer --&gt;
+						&lt;footer class="site-footer text-white section nobottompadding"&gt;
+							&lt;div class="section-container"&gt;
+								&lt;div class="container"&gt;
+									&lt;div class="row"&gt;
+										&lt;div class="col-md-4 col-sm-6"&gt;
+											&lt;aside class="widget widget_text"&gt;
+												&lt;h5 class="widget-title"&gt;About Us&lt;/h5&gt;
+												&lt;p&gt;We are creative developers. Made by Bluminethemes is sign under beautiful site templates created by us for people like us.&lt;/p&gt;
+											&lt;/aside&gt;
+										&lt;/div&gt;
+										&lt;div class="col-md-2 col-md-offset-2 col-sm-6"&gt;
+											&lt;aside class="widget widget_text"&gt;
+												&lt;h5 class="widget-title"&gt;About&lt;/h5&gt;
+												&lt;ul&gt;
+													&lt;li&gt;&lt;a href="about-1.html"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="about-2.html"&gt;Investors&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="about-3.html"&gt;Careers&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="home-blog-1.html"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="faq-2.html"&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+												&lt;/ul&gt;
+											&lt;/aside&gt;
+										&lt;/div&gt;
+										&lt;div class="col-md-2 col-sm-6"&gt;
+											&lt;aside class="widget widget_text"&gt;
+												&lt;h5 class="widget-title"&gt;Services&lt;/h5&gt;
+												&lt;ul&gt;
+													&lt;li&gt;&lt;a href="services-1.html"&gt;Graphic Design&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="services-2.html"&gt;Web Development&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="services-3.html"&gt;Copywriting&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="services-1.html"&gt;Branding&lt;/a&gt;&lt;/li&gt;
+												&lt;/ul&gt;
+											&lt;/aside&gt;
+										&lt;/div&gt;
+										&lt;div class="col-md-2 col-sm-6"&gt;
+											&lt;aside class="widget widget_text"&gt;
+												&lt;h5 class="widget-title"&gt;Introduction&lt;/h5&gt;
+												&lt;ul&gt;
+													&lt;li&gt;&lt;a href="about-1.html"&gt;Team Members&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="about-1.html"&gt;Testimonials&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="about-1.html"&gt;Our Clients&lt;/a&gt;&lt;/li&gt;
+												&lt;/ul&gt;
+											&lt;/aside&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;!-- Copyright --&gt;
+								&lt;div class="copyright background-white"&gt;
+									&lt;div class="container"&gt;
+										&lt;div class="row"&gt;
+											&lt;div class="col-md-6 col-sm-6 text-left text-dark"&gt;
+											© 2016 Nantria - All Rights Reserved
+											&lt;/div&gt;
+											&lt;div class="col-md-6 col-sm-6"&gt;
+												&lt;nav class="socials-icons pull-right"&gt;
+													&lt;ul&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-googleplus"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-pinterest"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-dribbble-outline"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+													&lt;/ul&gt;
+												&lt;/nav&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;&lt;!-- .copyright end --&gt;
+							&lt;/div&gt;
+							&lt;div class="overlay"&gt;
+								&lt;div class="overlay-color background-indigo opacity-90"&gt;&lt;/div&gt;
+								&lt;div class="overlay-image cover-background" style="background-image: url('demo/images/image-5.jpg');"&gt;&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/footer&gt;&lt;!-- .site-footer end --&gt;</pre>
+						
+						<p>Footer - Style 3</p>
+						<pre class="brush:html">
+						&lt;!-- Footer --&gt;
+						&lt;footer class="site-footer text-white section paddingbottom-20 paddingtop-20 background-dark-2"&gt;
+							&lt;div class="section-container"&gt;
+								&lt;!-- Copyright --&gt;
+								&lt;div class="copyright background-dark-2 nomargin"&gt;
+									&lt;div class="container"&gt;
+										&lt;div class="row"&gt;
+											&lt;div class="col-md-6 col-sm-6 text-left"&gt;
+											© 2016 Nantria - All Rights Reserved
+											&lt;/div&gt;
+											&lt;div class="col-md-6 col-sm-6"&gt;
+												&lt;nav class="socials-icons pull-right"&gt;
+													&lt;ul&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear social-white"&gt;&lt;i class="ion-social-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear social-white"&gt;&lt;i class="ion-social-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear social-white"&gt;&lt;i class="ion-social-googleplus"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear social-white"&gt;&lt;i class="ion-social-pinterest"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear social-white"&gt;&lt;i class="ion-social-dribbble-outline"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+													&lt;/ul&gt;
+												&lt;/nav&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;&lt;!-- .copyright end --&gt;
+							&lt;/div&gt;
+						&lt;/footer&gt;&lt;!-- .site-footer end --&gt;</pre>
+						
+						<p>Footer - Style 4</p>
+						<pre class="brush:html">
+						&lt;!-- Footer --&gt;
+						&lt;footer class="site-footer section background-grey"&gt;
+							&lt;div class="section-container"&gt;
+								&lt;!-- Copyright --&gt;
+								&lt;div class="copyright nomargin"&gt;
+									&lt;div class="container"&gt;
+										&lt;div class="row"&gt;
+											&lt;div class="col-md-12"&gt;
+												&lt;nav class="socials-icons pull-center"&gt;
+													&lt;ul&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-googleplus"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-pinterest"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-dribbble-outline"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+													&lt;/ul&gt;
+												&lt;/nav&gt;
+											&lt;/div&gt;
+											&lt;div class="col-md-12 text-center"&gt;
+											© 2016 Nantria - All Rights Reserved
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;&lt;!-- .copyright end --&gt;
+							&lt;/div&gt;
+						&lt;/footer&gt;&lt;!-- .site-footer end --&gt;</pre>
+						
+						<p>Footer - Style 5</p>
+						<pre class="brush:html">
+						&lt;!-- Footer --&gt;
+						&lt;footer class="site-footer text-white section paddingbottom-20 paddingtop-20 background-dark-2"&gt;
+							&lt;div class="section-container"&gt;
+								&lt;!-- Copyright --&gt;
+								&lt;div class="copyright background-dark-2 nomargin"&gt;
+									&lt;div class="container"&gt;
+										&lt;div class="row"&gt;
+											&lt;div class="col-md-6 col-sm-6 text-left"&gt;
+												&lt;nav class="horizontal-nav text-left"&gt;
+													&lt;ul&gt;
+														&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+													&lt;/ul&gt;
+												&lt;/nav&gt;
+											&lt;/div&gt;
+											&lt;div class="col-md-6 col-sm-6 text-right"&gt;
+												© 2016 Nantria - All Rights Reserved
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;&lt;!-- .copyright end --&gt;
+							&lt;/div&gt;
+						&lt;/footer&gt;&lt;!-- .site-footer end --&gt;</pre>
+						
+						<p>Footer - Style 6</p>
+						<pre class="brush:html">
+						&lt;!-- Footer --&gt;
+						&lt;footer class="site-footer section background-grey nobottompadding"&gt;
+							&lt;div class="section-container"&gt;
+								&lt;div class="container paddingbottom-90"&gt;
+									&lt;div class="row"&gt;
+										&lt;div class="col-md-6 col-md-offset-3"&gt;
+											&lt;img class="img-center marginbottom-20" src="images/logo-dark-2.png" alt="" /&gt;
+											&lt;p class="text-center"&gt;We are a creative company, who works with passion and love. We provide the best services you need. We help you to get better...&lt;/p&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;!-- Copyright --&gt;
+								&lt;div class="copyright background-white"&gt;
+									&lt;div class="container"&gt;
+										&lt;div class="row"&gt;
+											&lt;div class="col-md-6 col-sm-6 text-left text-dark"&gt;
+											© 2016 Nantria - All Rights Reserved
+											&lt;/div&gt;
+											&lt;div class="col-md-6 col-sm-6"&gt;
+												&lt;nav class="socials-icons pull-right"&gt;
+													&lt;ul&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-googleplus"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-pinterest"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-dribbble-outline"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+													&lt;/ul&gt;
+												&lt;/nav&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;&lt;!-- .copyright end --&gt;
+							&lt;/div&gt;
+						&lt;/footer&gt;&lt;!-- .site-footer end --&gt;</pre>
+						
+						<p>Footer - Style 7</p>
+						<pre class="brush:html">
+						&lt;!-- Footer --&gt;
+						&lt;footer class="site-footer section background-grey nobottompadding"&gt;
+							&lt;div class="section-container"&gt;
+								&lt;div class="container paddingbottom-70"&gt;
+									&lt;div class="row"&gt;
+										&lt;div class="col-md-6 col-md-offset-3"&gt;
+											&lt;img class="img-center marginbottom-20" src="images/logo-dark-2.png" alt="" /&gt;
+											&lt;p class="text-center"&gt;We are a creative company, who works with passion and love. We provide the best services you need. We help you to get better...&lt;/p&gt;
+											&lt;nav class="socials-icons pull-center"&gt;
+												&lt;ul&gt;
+													&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-googleplus"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-pinterest"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+													&lt;li&gt;&lt;a href="#" class="social-icon social-clear"&gt;&lt;i class="ion-social-dribbble-outline"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+												&lt;/ul&gt;
+											&lt;/nav&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;!-- Copyright --&gt;
+								&lt;div class="copyright background-white paddingtop-20 paddingbottom-20"&gt;
+									&lt;div class="container"&gt;
+										&lt;div class="row"&gt;
+											&lt;div class="col-md-6 col-sm-6 text-left text-dark"&gt;
+												&lt;nav class="horizontal-nav text-dark text-left"&gt;
+													&lt;ul&gt;
+														&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+													&lt;/ul&gt;
+												&lt;/nav&gt;
+											&lt;/div&gt;
+											&lt;div class="col-md-6 col-sm-6 text-right"&gt;
+												© 2016 Nantria - All Rights Reserved
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;&lt;!-- .copyright end --&gt;
+							&lt;/div&gt;
+						&lt;/footer&gt;&lt;!-- .site-footer end --&gt;</pre>
+						
+						<p>Footer - Style 8</p>
+						<pre class="brush:html">
+						&lt;!-- Footer --&gt;
+						&lt;footer class="site-footer section background-dark-6 nobottompadding"&gt;
+							&lt;div class="section-container"&gt;
+								&lt;div class="container paddingbottom-70"&gt;
+									&lt;div class="row"&gt;
+										&lt;div class="col-md-6 col-md-offset-3"&gt;
+											&lt;img class="img-center marginbottom-20" src="images/logo-light-2.png" alt="" /&gt;
+											&lt;p class="text-center text-white"&gt;We are a creative company, who works with passion and love. We provide the best services you need. We help you to get better...&lt;/p&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;!-- Copyright --&gt;
+								&lt;div class="copyright background-dark-8 paddingtop-20 paddingbottom-20 nomargin"&gt;
+									&lt;div class="container"&gt;
+										&lt;div class="row"&gt;
+											&lt;div class="col-md-6 col-sm-6 text-left text-white"&gt;
+											© 2016 Nantria - All Rights Reserved
+											&lt;/div&gt;
+											&lt;div class="col-md-6 col-sm-6"&gt;
+												&lt;nav class="socials-icons pull-right"&gt;
+													&lt;ul&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear social-white"&gt;&lt;i class="ion-social-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear social-white"&gt;&lt;i class="ion-social-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear social-white"&gt;&lt;i class="ion-social-googleplus"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear social-white"&gt;&lt;i class="ion-social-pinterest"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;a href="#" class="social-icon social-clear social-white"&gt;&lt;i class="ion-social-dribbble-outline"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+													&lt;/ul&gt;
+												&lt;/nav&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;&lt;!-- .copyright end --&gt;
+							&lt;/div&gt;
+						&lt;/footer&gt;&lt;!-- .site-footer end --&gt;</pre>
+						
+					</div>
+					
+				</div>
+				
+				<div class="bs-docs-section">
+				
+					<h1 id="docs-page-elements" class="page-header">Page Elements</h1>
+				
+					<div class="bs-docs-box first" id="docs-page-elements-title">
+						<h2 class="page-header">Page Title</h2>						
+						<p>Please check files: features-page-title-X.html</p>
+						
+						<p>Title Left</p>
+						<pre class="brush:html">
+						&lt;!-- Page Title --&gt;
+						&lt;section class="page-title background-grey"&gt;			
+							&lt;div class="section-container"&gt;
+								&lt;div class="container position-relative"&gt;
+									&lt;div class="text-left"&gt;
+										&lt;h3 class="heading-uppercase no-top-margin"&gt;Title Left&lt;/h3&gt;
+										&lt;p class="lead"&gt;A descriptive subtitle for your page.&lt;/p&gt;
+									&lt;/div&gt;
+									&lt;ol class="breadcrumb breadcrumb-right"&gt;
+										&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
+										&lt;li class="active"&gt;Title Left&lt;/li&gt;
+									&lt;/ol&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/section&gt;&lt;!-- .page-title end --&gt;</pre>
+						
+						<p>Title Right</p>
+						<pre class="brush:html">
+						&lt;!-- Page Title --&gt;
+						&lt;section class="page-title background-grey"&gt;			
+							&lt;div class="section-container"&gt;
+								&lt;div class="container position-relative"&gt;
+									&lt;div class="text-right"&gt;
+										&lt;h3 class="heading-uppercase no-top-margin"&gt;Title Right&lt;/h3&gt;
+										&lt;p class="lead"&gt;A descriptive subtitle for your page.&lt;/p&gt;
+									&lt;/div&gt;
+									&lt;ol class="breadcrumb breadcrumb-left"&gt;
+										&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+										&lt;li&gt;&lt;a href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
+										&lt;li class="active"&gt;Title Right&lt;/li&gt;
+									&lt;/ol&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/section&gt;&lt;!-- .page-title end --&gt;</pre>
+						
+						<p>Title Center</p>
+						<pre class="brush:html">
+						&lt;!-- Page Title --&gt;
+						&lt;section class="page-title background-grey"&gt;			
+							&lt;div class="section-container"&gt;
+								&lt;div class="container text-center"&gt;
+									&lt;h3 class="heading-uppercase no-top-margin"&gt;Title Center&lt;/h3&gt;
+									&lt;p class="lead"&gt;A descriptive subtitle for your page.&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;ol class="breadcrumb"&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
+								&lt;li class="active"&gt;Title Center&lt;/li&gt;
+							&lt;/ol&gt;
+						&lt;/section&gt;&lt;!-- .page-title end --&gt;</pre>
+						
+						<p>Title Dark</p>
+						<pre class="brush:html">
+						&lt;!-- Page Title --&gt;
+						&lt;section class="page-title background-dark-2"&gt;			
+							&lt;div class="section-container"&gt;
+								&lt;div class="container text-center"&gt;
+									&lt;h3 class="heading-uppercase no-top-margin text-white"&gt;Title Dark&lt;/h3&gt;
+									&lt;p class="lead text-white"&gt;A descriptive subtitle for your page.&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;ol class="breadcrumb light"&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
+								&lt;li class="active"&gt;Title Dark&lt;/li&gt;
+							&lt;/ol&gt;
+						&lt;/section&gt;&lt;!-- .page-title end --&gt;</pre>
+						
+						<p>Title Image</p>
+						<pre class="brush:html">
+						&lt;!-- Page Title --&gt;
+						&lt;section class="page-title"&gt;			
+							&lt;div class="section-container"&gt;
+								&lt;div class="container text-center"&gt;
+									&lt;h3 class="heading-uppercase text-white"&gt;Title Image&lt;/h3&gt;
+									&lt;p class="lead text-white"&gt;A descriptive subtitle for your page.&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;ol class="breadcrumb light"&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
+								&lt;li class="active"&gt;Title Image&lt;/li&gt;
+							&lt;/ol&gt;
+							&lt;div class="overlay-triangles bottom"&gt;
+								&lt;div class="container-triangles"&gt;
+									&lt;div class="triangle-down-left"&gt;&lt;/div&gt;
+									&lt;div class="triangle-down-right"&gt;&lt;/div&gt;
+									&lt;div class="square-left"&gt;&lt;/div&gt;
+									&lt;div class="square-right"&gt;&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class="overlay"&gt;
+								&lt;div class="overlay-color background-dark-2 opacity-20"&gt;&lt;/div&gt;
+								&lt;div class="overlay-image cover-background" style="background-image: url('demo/images/image-5.jpg');"&gt;&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/section&gt;&lt;!-- .page-title end --&gt;</pre>
+						
+						<p>Title Parallax</p>
+						<pre class="brush:html">
+						&lt;!-- Page Title --&gt;
+						&lt;section class="page-title"&gt;		
+							&lt;div class="section-container"&gt;
+								&lt;div class="container text-center"&gt;
+									&lt;h3 class="heading-uppercase text-white"&gt;Title Image&lt;/h3&gt;
+									&lt;p class="lead text-white"&gt;A descriptive subtitle for your page.&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;ol class="breadcrumb light"&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
+								&lt;li class="active"&gt;Title Image&lt;/li&gt;
+							&lt;/ol&gt;
+							&lt;div class="overlay"&gt;
+								&lt;div class="overlay-color background-dark-2 opacity-30"&gt;&lt;/div&gt;
+								&lt;div class="overlay-image parallax-background" style="background-image: url('demo/images/image-1.jpg');" data-stellar-background-ratio="0.4"&gt;&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/section&gt;&lt;!-- .page-title end --&gt;</pre>
+						
+						<p>Title HTML5 Video</p>
+						<pre class="brush:html">
+						&lt;!-- Page Title --&gt;
+						&lt;section class="page-title"&gt;			
+							&lt;div class="section-container"&gt;
+								&lt;div class="container text-center"&gt;
+									&lt;h3 class="heading-uppercase text-white"&gt;Title Video&lt;/h3&gt;
+									&lt;p class="lead text-white"&gt;A descriptive subtitle for your page.&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;ol class="breadcrumb light"&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
+								&lt;li class="active"&gt;Title Video&lt;/li&gt;
+							&lt;/ol&gt;
+							&lt;div class="overlay"&gt;
+								&lt;div class="overlay-color background-dark-2 opacity-20"&gt;&lt;/div&gt;
+								&lt;div class="overlay-video"&gt;
+									&lt;div class="video-wrapper"&gt;
+										&lt;video autoplay muted loop&gt;
+											&lt;source src="demo/video/work.webm" type="video/webm"&gt;
+											&lt;source src="demo/video/work.mp4" type="video/mp4"&gt;
+											&lt;source src="demo/video/work.ogv" type="video/ogg"&gt;
+										&lt;/video&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class="overlay-image cover-background on-mobile" style="background-image: url('demo/images/image-7.jpg');"&gt;&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/section&gt;&lt;!-- .page-title end --&gt;</pre>
+						
+						<p>Title No Background</p>
+						<pre class="brush:html">
+						&lt;!-- Page Title --&gt;
+						&lt;section class="page-title pt-small"&gt;			
+							&lt;div class="section-container"&gt;
+								&lt;div class="container text-center"&gt;
+									&lt;h3 class="heading-uppercase no-top-margin"&gt;Page Title&lt;/h3&gt;
+									&lt;p class="lead"&gt;A descriptive subtitle for your page.&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;ol class="breadcrumb"&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
+								&lt;li class="active"&gt;Title Center&lt;/li&gt;
+							&lt;/ol&gt;
+						&lt;/section&gt;&lt;!-- .page-title end --&gt;</pre>
+						
+						<p>Title Small</p>
+						<pre class="brush:html">
+						&lt;!-- Page Title --&gt;
+						&lt;section class="page-title pt-small background-grey"&gt;			
+							&lt;div class="section-container"&gt;
+								&lt;div class="container text-center"&gt;
+									&lt;h3 class="heading-uppercase no-top-margin"&gt;Title Center&lt;/h3&gt;
+									&lt;p class="lead"&gt;A descriptive subtitle for your page.&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;ol class="breadcrumb"&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
+								&lt;li class="active"&gt;Title Center&lt;/li&gt;
+							&lt;/ol&gt;
+						&lt;/section&gt;&lt;!-- .page-title end --&gt;</pre>
+						
+					</div>
+					
+					<div class="bs-docs-box" id="docs-page-elements-grid">
+						<h2 class="page-header">Grid</h2>
+						<p>Bootstrap Grid</p>
+						<div class="show-grid">
+							<div class="col-md-1">.col-md-1</div>
+							<div class="col-md-1">.col-md-1</div>
+							<div class="col-md-1">.col-md-1</div>
+							<div class="col-md-1">.col-md-1</div>
+							<div class="col-md-1">.col-md-1</div>
+							<div class="col-md-1">.col-md-1</div>
+							<div class="col-md-1">.col-md-1</div>
+							<div class="col-md-1">.col-md-1</div>
+							<div class="col-md-1">.col-md-1</div>
+							<div class="col-md-1">.col-md-1</div>
+							<div class="col-md-1">.col-md-1</div>
+							<div class="col-md-1">.col-md-1</div>
+						</div>
+						<div class="show-grid">
+							<div class="col-md-2">.col-md-2</div>
+							<div class="col-md-2">.col-md-2</div>
+							<div class="col-md-2">.col-md-2</div>
+							<div class="col-md-2">.col-md-2</div>
+							<div class="col-md-2">.col-md-2</div>
+							<div class="col-md-2">.col-md-2</div>
+						</div>
+						<div class="show-grid">
+							<div class="col-md-3">.col-md-3</div>
+							<div class="col-md-3">.col-md-3</div>
+							<div class="col-md-3">.col-md-3</div>
+							<div class="col-md-3">.col-md-3</div>
+						</div>
+						<div class="show-grid">
+							<div class="col-md-4">.col-md-4</div>
+							<div class="col-md-4">.col-md-4</div>
+							<div class="col-md-4">.col-md-4</div>
+						</div>
+						<div class="show-grid">
+							<div class="col-md-5">.col-md-5</div>
+							<div class="col-md-5">.col-md-5</div>
+							<div class="col-md-2">.col-md-2</div>
+						</div>
+						<div class="show-grid">
+							<div class="col-md-6">.col-md-6</div>
+							<div class="col-md-6">.col-md-6</div>
+						</div>
+						<div class="show-grid">
+							<div class="col-md-1">.col-md-1</div>
+							<div class="col-md-11">.col-md-11</div>
+						</div>
+						<div class="show-grid">
+							<div class="col-md-2">.col-md-2</div>
+							<div class="col-md-10">.col-md-10</div>
+						</div>
+						<div class="show-grid">
+							<div class="col-md-3">.col-md-3</div>
+							<div class="col-md-9">.col-md-9</div>
+						</div>
+						<div class="show-grid">
+							<div class="col-md-4">.col-md-4</div>
+							<div class="col-md-8">.col-md-8</div>
+						</div>
+						<div class="show-grid">
+							<div class="col-md-5">.col-md-5</div>
+							<div class="col-md-7">.col-md-7</div>
+						</div>
+						
+					</div>
+					
+					<div class="bs-docs-box" id="docs-page-elements-helper">
+						<h2 class="page-header">Helper Classes</h2>
+						<p>We have created some really useful helper classes for you. Here are a few of them:</p>
+						<ul class="list mb20">
+							<li><code>.nomargin</code> - Margin of <strong>0px</strong> on all sides.</li>
+							<li><code>.margin-10</code> - Margin of <strong>10px</strong> on all sides.</li>
+							<li><code>.margin-15</code> - Margin of <strong>15px</strong> on all sides.</li>
+							<li><code>.margin-20</code> - Margin of <strong>20px</strong> on all sides.</li>
+							<li><code>.margin-25</code> - Margin of <strong>25px</strong> on all sides.</li>
+							<li><code>.margin-30</code> - Margin of <strong>30px</strong> on all sides.</li>
+						</ul>
+						<ul class="list mb20">
+							<li><code>.notopmargin</code> - No Margin on the top side.</li>
+							<li><code>.margintop-1</code> - Margin of <strong>1px</strong> on top side.</li>
+							<li><code>.margintop-5</code> - Margin of <strong>5px</strong> on top side.</li>
+							<li><code>.margintop-10</code> - Margin of <strong>10px</strong> on top side.</li>
+							<li><code>.margintop-15</code> - Margin of <strong>15px</strong> on top side.</li>
+							<li><code>.margintop-20</code> - Margin of <strong>20px</strong> on top side.</li>
+							<li><code>.margintop-25</code> - Margin of <strong>25px</strong> on top side.</li>
+							<li><code>.margintop-30</code> - Margin of <strong>30px</strong> on top side.</li>
+							<li><code>.margintop-35</code> - Margin of <strong>35px</strong> on top side.</li>
+							<li><code>.margintop-40</code> - Margin of <strong>40px</strong> on top side.</li>
+							<li><code>.margintop-45</code> - Margin of <strong>45px</strong> on top side.</li>
+							<li><code>.margintop-50</code> - Margin of <strong>50px</strong> on top side.</li>
+							<li><code>.margintop-55</code> - Margin of <strong>55px</strong> on top side.</li>
+							<li><code>.margintop-60</code> - Margin of <strong>60px</strong> on top side.</li>
+							<li><code>.margintop-65</code> - Margin of <strong>65px</strong> on top side.</li>
+							<li><code>.margintop-70</code> - Margin of <strong>70px</strong> on top side.</li>
+							<li><code>.margintop-80</code> - Margin of <strong>80px</strong> on top side.</li>
+							<li><code>.margintop-90</code> - Margin of <strong>90px</strong> on top side.</li>
+							<li><code>.margintop-100</code> - Margin of <strong>100px</strong> on top side.</li>
+							<li><code>.margintop-110</code> - Margin of <strong>110px</strong> on top side.</li>
+							<li><code>.margintop-120</code> - Margin of <strong>120px</strong> on top side.</li>
+							<li><code>.margintop-130</code> - Margin of <strong>130px</strong> on top side.</li>
+							<li><code>.margintop-140</code> - Margin of <strong>140px</strong> on top side.</li>
+							<li><code>.margintop-150</code> - Margin of <strong>150px</strong> on top side.</li>
+							<li><code>.margintop-160</code> - Margin of <strong>160px</strong> on top side.</li>
+							<li><code>.margintop-170</code> - Margin of <strong>170px</strong> on top side.</li>
+							<li><code>.margintop-180</code> - Margin of <strong>180px</strong> on top side.</li>
+							<li><code>.margintop-190</code> - Margin of <strong>190px</strong> on top side.</li>
+							<li><code>.margintop-200</code> - Margin of <strong>200px</strong> on top side.</li>
+							<li><code>.margintop-210</code> - Margin of <strong>210px</strong> on top side.</li>
+						</ul>
+						<ul class="list mb20">
+							<li><code>.nobottommargin</code> - No Margin on the bottom side.</li>
+							<li><code>.marginbottom-1</code> - Margin of <strong>1px</strong> on bottom side.</li>
+							<li><code>.marginbottom-5</code> - Margin of <strong>5px</strong> on bottom side.</li>
+							<li><code>.marginbottom-10</code> - Margin of <strong>10px</strong> on bottom side.</li>
+							<li><code>.marginbottom-15</code> - Margin of <strong>15px</strong> on bottom side.</li>
+							<li><code>.marginbottom-20</code> - Margin of <strong>20px</strong> on bottom side.</li>
+							<li><code>.marginbottom-25</code> - Margin of <strong>25px</strong> on bottom side.</li>
+							<li><code>.marginbottom-30</code> - Margin of <strong>30px</strong> on bottom side.</li>
+							<li><code>.marginbottom-35</code> - Margin of <strong>35px</strong> on bottom side.</li>
+							<li><code>.marginbottom-40</code> - Margin of <strong>40px</strong> on bottom side.</li>
+							<li><code>.marginbottom-45</code> - Margin of <strong>45px</strong> on bottom side.</li>
+							<li><code>.marginbottom-50</code> - Margin of <strong>50px</strong> on bottom side.</li>
+							<li><code>.marginbottom-55</code> - Margin of <strong>55px</strong> on bottom side.</li>
+							<li><code>.marginbottom-60</code> - Margin of <strong>60px</strong> on bottom side.</li>
+							<li><code>.marginbottom-65</code> - Margin of <strong>65px</strong> on bottom side.</li>
+							<li><code>.marginbottom-70</code> - Margin of <strong>70px</strong> on bottom side.</li>
+							<li><code>.marginbottom-80</code> - Margin of <strong>80px</strong> on bottom side.</li>
+							<li><code>.marginbottom-90</code> - Margin of <strong>90px</strong> on bottom side.</li>
+							<li><code>.marginbottom-100</code> - Margin of <strong>100px</strong> on bottom side.</li>
+							<li><code>.marginbottom-110</code> - Margin of <strong>110px</strong> on bottom side.</li>
+							<li><code>.marginbottom-120</code> - Margin of <strong>120px</strong> on bottom side.</li>
+							<li><code>.marginbottom-130</code> - Margin of <strong>130px</strong> on bottom side.</li>
+							<li><code>.marginbottom-140</code> - Margin of <strong>140px</strong> on bottom side.</li>
+							<li><code>.marginbottom-150</code> - Margin of <strong>150px</strong> on bottom side.</li>
+							<li><code>.marginbottom-160</code> - Margin of <strong>160px</strong> on bottom side.</li>
+							<li><code>.marginbottom-170</code> - Margin of <strong>170px</strong> on bottom side.</li>
+							<li><code>.marginbottom-180</code> - Margin of <strong>180px</strong> on bottom side.</li>
+							<li><code>.marginbottom-190</code> - Margin of <strong>190px</strong> on bottom side.</li>
+							<li><code>.marginbottom-200</code> - Margin of <strong>200px</strong> on bottom side.</li>
+							<li><code>.marginbottom-210</code> - Margin of <strong>210px</strong> on bottom side.</li>
+						</ul>
+						<ul class="list mb20">
+							<li><code>.noleftmargin</code> - No Margin on the left side.</li>
+							<li><code>.marginleft-5</code> - Margin of <strong>5px</strong> on left side.</li>
+							<li><code>.marginleft-10</code> - Margin of <strong>10px</strong> on left side.</li>
+							<li><code>.marginleft-20</code> - Margin of <strong>20px</strong> on left side.</li>
+							<li><code>.marginleft-30</code> - Margin of <strong>30px</strong> on left side.</li>
+							<li><code>.marginleft-40</code> - Margin of <strong>40px</strong> on left side.</li>
+							<li><code>.marginleft-50</code> - Margin of <strong>50px</strong> on left side.</li>
+						</ul>	
+						<ul class="list mb20">	
+							<li><code>.norightmargin</code> - No Margin on the right side.</li>
+							<li><code>.marginright-10</code> - Margin of <strong>10px</strong> on right side.</li>
+							<li><code>.marginright-20</code> - Margin of <strong>20px</strong> on right side.</li>
+							<li><code>.marginright-30</code> - Margin of <strong>30px</strong> on right side.</li>
+							<li><code>.marginright-40</code> - Margin of <strong>40px</strong> on right side.</li>
+							<li><code>.marginright-50</code> - Margin of <strong>50px</strong> on right side.</li>
+						</ul>	
+						<ul class="list mb20">
+							<li><code>.nopadding</code> - Padding of <strong>0px</strong> on all sides.</li>
+							<li><code>.padding-10</code> - Padding of <strong>10px</strong> on all sides.</li>
+							<li><code>.padding-15</code> - Padding of <strong>15px</strong> on all sides.</li>
+							<li><code>.padding-20</code> - Padding of <strong>20px</strong> on all sides.</li>
+							<li><code>.padding-25</code> - Padding of <strong>25px</strong> on all sides.</li>
+							<li><code>.padding-30</code> - Padding of <strong>30px</strong> on all sides.</li>
+						</ul>			
+						<ul class="list mb20">
+							<li><code>.notoppadding</code> - No Padding on the top side.</li>
+							<li><code>.paddingtop-1</code> - Padding of <strong>1px</strong> on top side.</li>
+							<li><code>.paddingtop-5</code> - Padding of <strong>5px</strong> on top side.</li>
+							<li><code>.paddingtop-10</code> - Padding of <strong>10px</strong> on top side.</li>
+							<li><code>.paddingtop-15</code> - Padding of <strong>15px</strong> on top side.</li>
+							<li><code>.paddingtop-20</code> - Padding of <strong>20px</strong> on top side.</li>
+							<li><code>.paddingtop-25</code> - Padding of <strong>25px</strong> on top side.</li>
+							<li><code>.paddingtop-30</code> - Padding of <strong>30px</strong> on top side.</li>
+							<li><code>.paddingtop-35</code> - Padding of <strong>35px</strong> on top side.</li>
+							<li><code>.paddingtop-40</code> - Padding of <strong>40px</strong> on top side.</li>
+							<li><code>.paddingtop-45</code> - Padding of <strong>45px</strong> on top side.</li>
+							<li><code>.paddingtop-50</code> - Padding of <strong>50px</strong> on top side.</li>
+							<li><code>.paddingtop-55</code> - Padding of <strong>55px</strong> on top side.</li>
+							<li><code>.paddingtop-60</code> - Padding of <strong>60px</strong> on top side.</li>
+							<li><code>.paddingtop-65</code> - Padding of <strong>65px</strong> on top side.</li>
+							<li><code>.paddingtop-70</code> - Padding of <strong>70px</strong> on top side.</li>
+							<li><code>.paddingtop-80</code> - Padding of <strong>80px</strong> on top side.</li>
+							<li><code>.paddingtop-90</code> - Padding of <strong>90px</strong> on top side.</li>
+							<li><code>.paddingtop-100</code> - Padding of <strong>100px</strong> on top side.</li>
+							<li><code>.paddingtop-110</code> - Padding of <strong>110px</strong> on top side.</li>
+							<li><code>.paddingtop-120</code> - Padding of <strong>120px</strong> on top side.</li>
+							<li><code>.paddingtop-130</code> - Padding of <strong>130px</strong> on top side.</li>
+							<li><code>.paddingtop-140</code> - Padding of <strong>140px</strong> on top side.</li>
+							<li><code>.paddingtop-150</code> - Padding of <strong>150px</strong> on top side.</li>
+							<li><code>.paddingtop-160</code> - Padding of <strong>160px</strong> on top side.</li>
+							<li><code>.paddingtop-170</code> - Padding of <strong>170px</strong> on top side.</li>
+							<li><code>.paddingtop-180</code> - Padding of <strong>180px</strong> on top side.</li>
+							<li><code>.paddingtop-190</code> - Padding of <strong>190px</strong> on top side.</li>
+							<li><code>.paddingtop-200</code> - Padding of <strong>200px</strong> on top side.</li>
+							<li><code>.paddingtop-210</code> - Padding of <strong>210px</strong> on top side.</li>
+						</ul>
+						<ul class="list mb20">
+							<li><code>.nobottompadding</code> - No Padding on the bottom side.</li>
+							<li><code>.paddingbottom-1</code> - Padding of <strong>1px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-5</code> - Padding of <strong>5px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-10</code> - Padding of <strong>10px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-15</code> - Padding of <strong>15px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-20</code> - Padding of <strong>20px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-25</code> - Padding of <strong>25px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-30</code> - Padding of <strong>30px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-35</code> - Padding of <strong>35px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-40</code> - Padding of <strong>40px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-45</code> - Padding of <strong>45px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-50</code> - Padding of <strong>50px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-55</code> - Padding of <strong>55px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-60</code> - Padding of <strong>60px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-65</code> - Padding of <strong>65px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-70</code> - Padding of <strong>70px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-80</code> - Padding of <strong>80px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-90</code> - Padding of <strong>90px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-100</code> - Padding of <strong>100px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-110</code> - Padding of <strong>110px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-120</code> - Padding of <strong>120px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-130</code> - Padding of <strong>130px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-140</code> - Padding of <strong>140px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-150</code> - Padding of <strong>150px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-160</code> - Padding of <strong>160px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-170</code> - Padding of <strong>170px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-180</code> - Padding of <strong>180px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-190</code> - Padding of <strong>190px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-200</code> - Padding of <strong>200px</strong> on bottom side.</li>
+							<li><code>.paddingbottom-210</code> - Padding of <strong>210px</strong> on bottom side.</li>
+						</ul>
+						<ul class="list mb20">
+							<li><code>.text-left</code> - Left Aligned Text.</li>
+							<li><code>.text-center</code> - Center Aligned Text.</li>
+							<li><code>.text-right</code> - Right Aligned Text.</li>
+							<li><code>.text-justify</code> - Justify Text.</li>
+						</ul>					
+						<ul class="list mb20">
+							<li><code>.text-white</code> - White Color Text.</li>
+							<li><code>.text-dark</code> - Dark Color Text.</li>
+						</ul>
+						<ul class="list mb20">
+							<li><code>.font-thin</code> - Font weight 100.</li>
+							<li><code>.font-extralight</code> - Font weight 200.</li>
+							<li><code>.font-light</code> - Font weight 300.</li>
+							<li><code>.font-normal</code> - Font weight 400.</li>
+							<li><code>.font-medium</code> - Font weight 500.</li>
+							<li><code>.font-semibold</code> - Font weight 600.</li>
+							<li><code>.font-bold</code> - Font weight 700.</li>
+							<li><code>.font-extrabold</code> - Font weight 800.</li>
+							<li><code>.font-ultrabold</code> - Font weight 900.</li>
+							<li><code>.font-large</code> - Font size <strong>72px</strong>.</li>
+							<li><code>.font-xlarge</code> - Font size <strong>92px</strong>.</li>
+							<li><code>.font-italic</code> - Font style italic.</li>
+						</ul>
+						<ul class="list mb20">
+							<li><code>.noborder</code> - No Border on all sides.</li>
+							<li><code>.notopborder</code> - No Border on the top side.</li>
+							<li><code>.nobottomborder</code> - No Border on the bottom side.</li>
+							<li><code>.noleftborder</code> - No Border on the left side.</li>
+							<li><code>.norightborder</code> - No Border on the right side.</li>
+							<li><code>.bordertop</code> - Border of <strong>1px</strong> on top side (light grey).</li>
+							<li><code>.borderbottom</code> - Border of <strong>1px</strong> on bottom side (light grey).</li>
+							<li><code>.border-black</code> - Border color black.</li>
+							<li><code>.border-white</code> - Border color white.</li>
+						</ul>
+						<ul class="list mb20">
+							<li><code>.nobackground</code> - No Backgrounds.</li>
+							<li><code>.background-norepeat</code> - Background no repeat.</li>
+							<li><code>.background-repeat</code> - Background repeat.</li>
+							<li><code>.background-repeatx</code> - Background repeat X.</li>
+							<li><code>.background-repeaty</code> - Background repeat Y.</li>
+							<li><code>.background-bottom</code> - Background on the bottom.</li>
+						</ul>
+						<ul class="list">
+							<li><code>.opacity-100</code> - Opacity 100%.</li>
+							<li><code>.opacity-95</code> - Opacity 95%.</li>
+							<li><code>.opacity-90</code> - Opacity 90%.</li>
+							<li><code>.opacity-85</code> - Opacity 85%.</li>
+							<li><code>.opacity-80</code> - Opacity 80%.</li>
+							<li><code>.opacity-75</code> - Opacity 75%.</li>
+							<li><code>.opacity-70</code> - Opacity 70%.</li>
+							<li><code>.opacity-65</code> - Opacity 65%.</li>
+							<li><code>.opacity-60</code> - Opacity 60%.</li>
+							<li><code>.opacity-55</code> - Opacity 55%.</li>
+							<li><code>.opacity-50</code> - Opacity 50%.</li>
+							<li><code>.opacity-45</code> - Opacity 45%.</li>
+							<li><code>.opacity-40</code> - Opacity 40%.</li>
+							<li><code>.opacity-35</code> - Opacity 35%.</li>
+							<li><code>.opacity-30</code> - Opacity 30%.</li>
+							<li><code>.opacity-25</code> - Opacity 25%.</li>
+							<li><code>.opacity-20</code> - Opacity 20%.</li>
+							<li><code>.opacity-15</code> - Opacity 15%.</li>
+							<li><code>.opacity-10</code> - Opacity 10%.</li>
+							<li><code>.opacity-5</code> - Opacity 5%.</li>
+							<li><code>.opacity-0</code> - Opacity 0</li>
+						</ul>
+					</div>
+					
+					<div class="bs-docs-box" id="docs-page-elements-snippets">
+						<h2 class="page-header">Useful Snippets</h2>
+						<p>Smooth Scrolling to Same Page Sections.</p>
+						<p>You can use this functionality by adding <code>scrollto</code> class to a Button or a Link.</p>
+						<pre class="brush: html">
+							&lt;a href="#about" class="button button-border button-white button-rounded scrollto"&gt;Learn more&lt;/a&gt;</pre>
+					</div>
+					
+				</div>
+				
+				<div class="bs-docs-section">
+				
+					<h1 id="docs-widgets" class="page-header">Widgets</h1>
+				
+					<div class="bs-docs-box first" id="docs-widgets-setup">
+						<h2 class="page-header">Setup</h2>
+						<p>Widgets are simple &amp; easy to setup, completely flexible &amp; can be used anywhere on a page. Here's a sample code:</p>
+						<pre class="brush: html">
+						&lt;aside class="widget"&gt;
+							&lt;h4&gt;Widget Title&lt;/h4&gt;
+							...
+						&lt;/aside&gt;</pre>
+						<p>List of Included Widgets:</p>
+						<ul class="list">
+							<li>Links</li>
+							<li>Posts List</li>
+							<li>Color Filter</li>
+							<li>Size Filter</li>
+							<li>Brand Filter</li>
+							<li>Subscribers</li>
+							<li>Social Icons</li>
+							<li>Quick Contact</li>
+							<li>Tags Cloud</li>
+							<li>Video Embeds</li>
+							<li>Raw Text/HTML</li>
+						</ul>
+					</div>
+					
+				</div>
+				
+				<div class="bs-docs-section">
+				
+					<h1 id="docs-forms" class="page-header">Forms</h1>
+				
+					<div class="bs-docs-box first" id="docs-form-contact">
+						<h2 class="page-header">Contact</h2>
+						<p>You can setup Contact Forms anywhere on your Website by simply Copy/Pasting the Sample Code present in the HTML Files.</p>
+						<p>Just change your Email Address in the <code>include/sendemail.php</code> and <code>include/quickcontact.php</code> file to start receiving Form Responses.</p>
+						<pre class="brush: js">
+						$toemail = 'youremail@yourwebsite.com'; // Your Email Address
+						$toname = 'Your Name'; // Your Name</pre>
+					
+						<h4>Not receiving Form Emails?</h4>
+						<p>If you are not receiving Emails from your Forms then chances are that your Server Configuration doesn't support <strong>PHP</strong> <code>mail()</code> function. But you can use SMTP Authentication. Just find the following line of code:</p>
+						<pre class="brush: js">
+						$mail = new PHPMailer();</pre>
+						<p>Add this after the above line:</p>
+						<pre class="brush: js">
+						$mail->IsSMTP();
+						$mail->Host = "mail.yourdomain.com";
+						$mail->SMTPDebug = 2;
+						$mail->SMTPAuth = true;
+						$mail->Port = 26;
+						$mail->Username = "yourname@yourdomain.com";
+						$mail->Password = "yourpassword";</pre>
+					</div>
+					
+					<div class="bs-docs-box first" id="docs-form-subscription">
+						<h2 class="page-header">Subscription</h2>
+						<p>You can setup Mailchimp Subscriptions anywhere on your Website by simply Copy/Pasting the Sample Code present in the HTML Files.</p>
+						<p>To setup your Mailchimp Newsletter Signup Form, you will have to add your <code>Mailchimp Post URL</code> to <code>js/main.js</code> File.</p>
+						
+						<pre class="brush: html;">
+						// MAILCHIMP
+						$('.mailchimp-form').ajaxChimp({
+							callback: mailchimpCallback,
+							url: "mailchimp-post-url" //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".  
+						});;</pre>
+						
+						<p>To obtain the code for your MailChimp Form Action:</p>
+						<p>1. Log into your <a href="http://mailchimp.com/" target="_blank">MailChimp account</a>.</p>
+						<p>
+							<img src="img/mc-step-1.png" alt="#" class="img-responsive img-center">
+						</p>
+						<p>2. Click the Lists button in the left navigation bar.</p>
+						<p>
+							<img src="img/mc-step-2.png" alt="#" class="img-responsive img-center">
+						</p>
+						<p>3. Click the drop-down box on the right, and choose <strong>Signup forms</strong>.</p>
+						<p>
+							<img src="img/mc-step-3.png" alt="#" class="img-responsive img-center">
+						</p>
+						<p>4. Choose <strong>Embedded forms</strong>.</p>
+						<p>
+							<img src="img/mc-step-4.png" alt="#" class="img-responsive img-center">
+						</p>
+						<p>5. On the <strong>Embedded form code</strong> page, click on <strong>Naked</strong>.</p>
+						<p>
+							<img src="img/mc-step-5.png" alt="#" class="img-responsive img-center">
+						</p>
+						<p>6. Scroll down and locate <strong>Copy/paste onto your site</strong>.</p>
+						<p>
+							<img src="img/mc-step-6.png" alt="#" class="img-responsive img-center">
+						</p>
+						<p>7. Double-click anywhere in the box to select the code.</p>
+						<p>8. Copy the code to your clipboard (use CMD-C for Mac or CTRL-C for Windows).</p>
+						<p>9. Paste the code into any text editor so that you can view it.</p>
+						<p>10. The only line of this code that you need is the action attribute value in the opening form tag. Reading from the top of the code, it's located between the second set of quotation marks. Don’t select the quotation marks themselves, just what's inside them.</p>
+						<p>
+							<img src="img/mc-step-7.png" alt="#" class="img-responsive img-center">
+						</p>
+						<p>Copy the selected action attribute value to your clipboard and paste the action attribute value into the <code>mailchimp-post-url</code> at line 489 of <span>main.js</span>.</p>
+						<p>11. Test things out by subscribing to your own MailChimp newsletter.</p>
+						
+					</div>
+					
+				</div>			
+			</div>
+
+		</div>
+	</div><!-- /.container -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>Copyright &copy; 2016 by <a target="_blank" href="http://themeforest.net/user/bluminethemes">Bluminethemes</a>. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<a class="scrollto back-to-top" href="#top"><i class="fa fa-angle-up"></i></a>
+
+	<script>
+		SyntaxHighlighter.all();
+	</script>
+</body>
+</html>
